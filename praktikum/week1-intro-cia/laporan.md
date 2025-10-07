@@ -46,15 +46,6 @@ Contoh:Penggunaan beckup server dan sistem keamanan jaringan agar layanan tetep 
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
 
 ---
 
