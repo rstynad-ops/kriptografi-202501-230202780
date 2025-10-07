@@ -18,10 +18,15 @@ Kelas: 5 IKRB
 ## 2. Dasar Teori
 Sejarah Kriptografi & Prinsip CIA
 Kriptografi erasala dari dua kata Yunani,yaitu kryptos (tersembunyi) dan graphein (menulis), yang jika digabungkan akan berarti"menulis secara tersembunyi".kriptografi  berfunngsi untuk melindungi informasi agar informasi tersebut hanya dapat dibaca  oleh pihak yang memiliki wewenang.
+
     pada era kriptografi klasik, metode yang digunakan masih sederhana dan berbasis pada penggantian serta pergeseran huruf. Minsalnya Caesar Cipher,yang mengganti huruf dengan posisi tertentu di alfabet, Vigenere Cipher menggunakan kunci berupa kata untuk mengenkripsi pesan.Tujuan utama dari metode ini adalah untuk menjaga kerahasiaan pesan dalam komunikasi militer dan diplomatik. Lalu memasuki era kriptografi modern,pendekatan matematika dan komputer mulai digunakan dimana kriptografi tidak hanya untuk merahasiakan pesan,tetapi juga untuk memastikan keaslian dan integritas data. Algoritma seperti AES(Advanced Encryption Standard) digunakan untuk enkripsi simetris yang cepat dan aman, sedangkan RSA(Rivest-Shamir-Adleman) menjadi algoritma asimetris yang memungkinkan penggunaan kunci publik dan privat.
+    
     Memasuki era kriptografi kontemporer, kriptografi berkembang pesat dengan munculnya tekologi digital dan internet.Salah satu contoh penerapannya adalah blockchain, yang menggunakan konsep hash dan tanda tangan digital untuk menjaga integritas transaksi tanpa perantara. Teknologi ini menjadi dasar bagi cryptocurrency seperti Bitcoin, yang mengandalkan kriptografi untuk menjamin keamanan dan keaslian transaksi digital.
+    
     kriptografi telah berevolusi dari sekadar penyandian sederhana menjadi ilmu penting dalam keamanan informasi. Perkembangannya menunjukkan bahwa kebutuhan manusia terhadap keamanan, privasi, dan kepercayaan pada sistem digital semakin meningkat seiring kemajuan teknologi.
+    
 prinnsip CIA
+
 CIA merupakan kependekan dari Confidentiality,Integrity, dan Availability.Dimana tiga unsur ini dikenal sebagai CIA Triad,yaitu tiga pilar utama keamanan informasi yang menjadi dasar untuk melindungi data dan sistem agar tetap aman,utuh,serta dapat diakses oleh pihak yang berhak.
 Confidentiality(Kerahasiaan),menjaga agar informasi hanya dapat diakses oleh pihak yang berwenang.Tujuaannya untuk mencegah kebocoran atau akses tidak sah terhadap data penting.
 Contoh:Enkripsi pada pesan whatsapp agar hanya pengirim dan penerima yang bisa membaca isinya.
