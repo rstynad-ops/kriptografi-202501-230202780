@@ -1,15 +1,11 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
-
+Minggu ke-:2 Topik:week2-cryptosystem Nama:Resty Chonifatul jannah  NIM:230202780 Kelas:5 ikrb
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
+Menggambarkan proses enkripsi dan dekripsi sederhana.
+Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 ---
 
 ## 2. Dasar Teori
