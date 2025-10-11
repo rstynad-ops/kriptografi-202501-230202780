@@ -53,3 +53,8 @@ Contoh:Penggunaan beckup server dan sistem keamanan jaringan agar layanan tetep 
 ## 8. Kesimpulan
    Kriptografi merupakan ilmu yang berawal dari teknik penyandian sederhana pada masa klasik hingga berkembang menjadi sistem keamanan digital yang kompleks di era modern dan kontemporer. Perkembangannya mencerminkan kebutuhan manusia untuk menjaga keamanan, keaslian, dan kerahasiaan informasi dalam dunia digital. Prinsip dasar keamanan informasi dijelaskan melalui konsep CIA Triad (Confidentiality, Integrity, dan Availability), yang menekankan pentingnya menjaga kerahasiaan data, memastikan keaslian serta keutuhannya, dan menjamin ketersediaan informasi bagi pihak yang berhak. Dengan demikian, kriptografi dan prinsip CIA menjadi fondasi utama dalam menjaga keamanan informasi di era teknologi saat ini.
 
+<img width="1919" height="1078" alt="repo_setup" src="https://github.com/user-attachments/assets/afec38c1-29a6-4daa-8b90-ff231340611f" />
+
+
+   
+
