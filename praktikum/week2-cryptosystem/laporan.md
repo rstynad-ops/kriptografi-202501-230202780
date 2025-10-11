@@ -6,14 +6,19 @@ Minggu ke-:2 Topik:week2-cryptosystem Nama:Resty Chonifatul jannah  NIM:23020278
 ## 1. Tujuan
 1. Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
 2. Menggambarkan proses enkripsi dan dekripsi sederhana.
-Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
-
----
+3. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Komponen - komponen Kriptosistem
 
+Dalam  sebuah kriptosistem, terdapat beberapa komponen utama yang bekerja sama untuk melakukan proses enkripsi (penyandian) dan deskripsi (pembacaan kembali). Berikut komponen-komponen utamanya:
+- Plaintext atau pesan asli merupakan data asli yang akan dikirim atau disimpan dengan aman.
+Plaintext ini berupa teks,angka,gambar,atau informasi lain sebelum di enkripsi.
+- Chipertext adalah hasil dari proses enkripsi terhadap plaintext menggunakan algoritma tertentu. Chipertext tidak bisa dibaca tanpa mengetahui kunci yang digunakan untuk mendeskripsikan pesan.
+- Algoritma enkripsi merupakan proses atau aturan matematis yang digunakan untuk mengubah plaintext menjadi chipertext.
+- Algoritma deskripsi yaitu kebalikan dari enkripsi, digunakan untuk mengubah pesan dari chipertext kembali menjadi plaintext menggunakan kunci tertentu,yang mana biasanya menggunakan algoritma yang sama atau serupa dengan proses enkripsi.
+- Kunci atau Key merupakan nilai rahasuia yang di gunakan dalam proses enkripsi dan deskripsi. Tanpa kunci, pesan tidak dapat dikembalikan ke bentuk aslinya, kunci inilah yang membuat sistem aman.
+  
 ---
 
 ## 3. Alat dan Bahan
