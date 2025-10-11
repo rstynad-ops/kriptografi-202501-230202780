@@ -8,8 +8,7 @@ Minggu ke-:2 Topik:week2-cryptosystem Nama:Resty Chonifatul jannah  NIM:23020278
 2. Menggambarkan proses enkripsi dan dekripsi sederhana.
 3. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
-## 2. Dasar Teori
-Komponen - komponen Kriptosistem
+## 2. Komponen - komponen Kriptosistem
 
 Dalam  sebuah kriptosistem, terdapat beberapa komponen utama yang bekerja sama untuk melakukan proses enkripsi (penyandian) dan deskripsi (pembacaan kembali). Berikut komponen-komponen utamanya:
 - Plaintext atau pesan asli merupakan data asli yang akan dikirim atau disimpan dengan aman.
