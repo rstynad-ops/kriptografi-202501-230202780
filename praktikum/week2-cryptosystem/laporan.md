@@ -6,6 +6,7 @@ Minggu ke-:2 Topik:week2-cryptosystem Nama:Resty Chonifatul jannah  NIM:23020278
 Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
 Menggambarkan proses enkripsi dan dekripsi sederhana.
 Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
+
 ---
 
 ## 2. Dasar Teori
