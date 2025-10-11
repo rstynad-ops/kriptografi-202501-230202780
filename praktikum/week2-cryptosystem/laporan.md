@@ -18,6 +18,9 @@ Plaintext ini berupa teks,angka,gambar,atau informasi lain sebelum di enkripsi.
 - Algoritma enkripsi merupakan proses atau aturan matematis yang digunakan untuk mengubah plaintext menjadi chipertext.
 - Algoritma deskripsi yaitu kebalikan dari enkripsi, digunakan untuk mengubah pesan dari chipertext kembali menjadi plaintext menggunakan kunci tertentu,yang mana biasanya menggunakan algoritma yang sama atau serupa dengan proses enkripsi.
 - Kunci atau Key merupakan nilai rahasuia yang di gunakan dalam proses enkripsi dan deskripsi. Tanpa kunci, pesan tidak dapat dikembalikan ke bentuk aslinya, kunci inilah yang membuat sistem aman.
+## Kriptografi simetris & asimetris
+- Kriptografi sismetris merupakan sistem enkripsi yang menggunakan kata kunci yang sama dengan untuk proses deskripsi. Cara kerja dari kriptografi sismertis yaitu, pengirim mengenkripsi pesan dengan suatu kunci, dan penerima harus memiliki kunci yang sama untuk mendeskripsikan pesan tersebut. Contoh algoritma yang sering digunakan ialah, DES,AES,RC4.
+- Kriptografi asimetris merupakan kebalikan dari kriptografi simetris yang mana kriptografi asimetris menggukan dua kunci yang berbeda,yaitu kunci public(proses enkripsi pesan), dan kunci privat(untuk deskripsi pesan). cara kerja dari kriptografi asimetris yaitu, pengirim mengenkripsi pesan menggunakan kunci public penerima, dan penerima membuka pesan dengan menggunakan kunci privat miliknya. Contoh algoritma yang sering digunakan ialah, RSA,DSA,dan ECC.
   
 ---
 
