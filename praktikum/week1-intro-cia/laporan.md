@@ -18,6 +18,7 @@ Kriptografi erasala dari dua kata Yunani,yaitu kryptos (tersembunyi) dan graphei
     kriptografi telah berevolusi dari sekadar penyandian sederhana menjadi ilmu penting dalam keamanan informasi. Perkembangannya menunjukkan bahwa kebutuhan manusia terhadap keamanan, privasi, dan kepercayaan pada sistem digital semakin meningkat seiring kemajuan teknologi.
     
 prinnsip CIA
+
 CIA merupakan kependekan dari Confidentiality,Integrity, dan Availability.Dimana tiga unsur ini dikenal sebagai CIA Triad,yaitu tiga pilar utama keamanan informasi yang menjadi dasar untuk melindungi data dan sistem agar tetap aman,utuh,serta dapat diakses oleh pihak yang berhak.
 Confidentiality(Kerahasiaan),menjaga agar informasi hanya dapat diakses oleh pihak yang berwenang.Tujuaannya untuk mencegah kebocoran atau akses tidak sah terhadap data penting.
 Contoh:Enkripsi pada pesan whatsapp agar hanya pengirim dan penerima yang bisa membaca isinya.
@@ -29,39 +30,15 @@ Contoh:Penggunaan beckup server dan sistem keamanan jaringan agar layanan tetep 
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
 ---
 
 ## 4. Langkah Percobaan
 - Melakukan fork repository kriptografi
 - Melakukan clone repository ke komputer lokal.
-- Membuat folder praktikum/week1-intro-cia/ berisi laporan.md dan folder screenshots.
+- Membuat folder praktikum/week1-intro-cia/ berisi laporan.md dan folder screenshot.
 - Menulis ringkasan materi singkat.
 - Menjawab quiz.
-
----
-
-## 5. Source Code
-
----
-
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
-
 ---
 
 ## 7. Quiz singkat
@@ -74,25 +51,5 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+   Kriptografi merupakan ilmu yang berawal dari teknik penyandian sederhana pada masa klasik hingga berkembang menjadi sistem keamanan digital yang kompleks di era modern dan kontemporer. Perkembangannya mencerminkan kebutuhan manusia untuk menjaga keamanan, keaslian, dan kerahasiaan informasi dalam dunia digital. Prinsip dasar keamanan informasi dijelaskan melalui konsep CIA Triad (Confidentiality, Integrity, dan Availability), yang menekankan pentingnya menjaga kerahasiaan data, memastikan keaslian serta keutuhannya, dan menjamin ketersediaan informasi bagi pihak yang berhak. Dengan demikian, kriptografi dan prinsip CIA menjadi fondasi utama dalam menjaga keamanan informasi di era teknologi saat ini.
 
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
