@@ -8,8 +8,8 @@ Minggu ke-:2 Topik:week2-cryptosystem Nama:Resty Chonifatul jannah  NIM:23020278
 2. Menggambarkan proses enkripsi dan dekripsi sederhana.
 3. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
-## 2. Komponen - komponen Kriptosistem
-
+## 2. Dasar Teori
+Komponen - komponen Kriptosistem
 Dalam  sebuah kriptosistem, terdapat beberapa komponen utama yang bekerja sama untuk melakukan proses enkripsi (penyandian) dan deskripsi (pembacaan kembali). Berikut komponen-komponen utamanya:
 - Plaintext atau pesan asli merupakan data asli yang akan dikirim atau disimpan dengan aman.
 Plaintext ini berupa teks,angka,gambar,atau informasi lain sebelum di enkripsi.
@@ -44,13 +44,37 @@ Contoh format:
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+def encrypt(plaintext, key):
+    result = ""
+    for char in plaintext:
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift + key) % 26 + shift)
+        else:
+            result += char
+    return result
 
+def decrypt(ciphertext, key):
+    result = ""
+    for char in ciphertext:
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift - key) % 26 + shift)
+        else:
+            result += char
+    return result
+
+if __name__ == "__main__":
+    message = "<230202780><Resty Chonifatul Jannah>"
+    key = 5
+
+    enc = encrypt(message, key)
+    dec = decrypt(enc, key)
+
+    print("Plaintext :", message)
+    print("Ciphertext:", enc)
+    print("Decrypted :", dec)
+)
 ---
 
 ## 6. Hasil dan Pembahasan
