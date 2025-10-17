@@ -84,7 +84,9 @@ Decrypted : <230202780><Resty Chonifatul Jannah>
 ---
 
 ## 6. Hasil dan Pembahasan
+
 Diagram Kriptosistem : 
+
 <img width="481" height="221" alt="diagram_kriptosistem" src="https://github.com/user-attachments/assets/292134e8-2f67-46a9-9ca1-412bd80210c0" />
 
 Hasil eksekusi program Caesar Cipher:
