@@ -4,10 +4,9 @@ Minggu ke-:3 Topik: moodmath Nama: Resty Chonifatul Jannah NIM: 230202780 Kelas:
 ---
 
 ## 1. Tujuan
-
-1.Menyelesaikan operasi aritmetika modular.
-2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
-3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
+1. Menyelesaikan operasi aritmetika modular.
+2. Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
+3. Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 
 ---
 
