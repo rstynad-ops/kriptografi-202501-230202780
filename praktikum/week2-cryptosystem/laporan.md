@@ -41,9 +41,8 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
+Simulasi enkripsi & dekripsi menggunakan substitusi sederhana (misalnya Caesar Cipher).
+```
 def encrypt(plaintext, key):
     result = ""
     for char in plaintext:
@@ -74,6 +73,13 @@ if __name__ == "__main__":
     print("Plaintext :", message)
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
+```
+Ekspetasi Keluaran
+```
+Plaintext : <230202780><Resty Chonifatul Jannah>
+Ciphertext: <230202780><Wjxyd Hmtsnkfyzq Ofssfm>
+Decrypted : <230202780><Resty Chonifatul Jannah>
+```
 )
 ---
 
