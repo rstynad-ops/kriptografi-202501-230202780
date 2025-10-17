@@ -32,11 +32,12 @@ Plaintext ini berupa teks,angka,gambar,atau informasi lain sebelum di enkripsi.
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Membuat ringkasan perbedaan antara kriptosistem simetris dan asimetris.
+2. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+3. Menyalin kode program dari panduan praktikum.
+4. Menjalankan program dengan perintah `python caesar_cipher.py`.
+5. Mengaploud hasil eksekusi di folder praktikum/week2-cryptosistem/screenshots/
+6. Menjawab pertanyaan diskusi.
 
 ---
 
@@ -80,41 +81,55 @@ Plaintext : <230202780><Resty Chonifatul Jannah>
 Ciphertext: <230202780><Wjxyd Hmtsnkfyzq Ofssfm>
 Decrypted : <230202780><Resty Chonifatul Jannah>
 ```
-)
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Diagram Kriptosistem : 
+<img width="481" height="221" alt="diagram_kriptosistem" src="https://github.com/user-attachments/assets/292134e8-2f67-46a9-9ca1-412bd80210c0" />
 
 Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+<img width="1919" height="1079" alt="Screenshot 2025-10-17 215128" src="https://github.com/user-attachments/assets/dff8d9dd-bbf6-4a49-84dd-5d24b3a60a19" />
+<img width="1919" height="1069" alt="Screenshot 2025-10-17 215334" src="https://github.com/user-attachments/assets/bf1c6b3a-65fc-416b-aa29-6467b8f31002" />
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+## 7. Pertanyaan
+1. Sebutkan komponen utama dalam sebuah kriptosistem.
+2. Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
+3. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
+## Jawaban :  
+- Pertanyaan 1:
+- Plaintext :Pesan asli yang ingin dikirim atau disembunyikan
+- Kunci :Hasil dari proses enkripsi yang tidak dapat dibaca tanpa kunci dekripsi.
+- Key (Kunci), Informasi rahasia yang digunakan dalam proses enkripsi dan dekripsi.
+- Algoritma Enkripsi/Dekripsi, Metode atau aturan yang digunakan untuk menyandikan dan membuka pesan.
+- Pertanyaan 2:
+## Sistem Kriptogafi Simetris
+- Kelebihan :
+  1.Proses lebih cepat, enkripsi dan deskripsi tidak membutuhkan komputasi rumit
+  2.Efisien untuk data besar, cocok digunakan untuk mengenkripsi file besar
+  3.Algoritma sederhana, mudah diimplementasikan dan tidak membutuhkan perangkat keras mahal
+-  Kelemahan :
+  1.Masalah distribusi kunci, kunci rahasia harus dibagikan ke pihak lain secara aman
+  2.Tidak cocok untuk banyak pengguna, karena setiap pasangan pengguna butuh kunci berbeda,   sehingga sulit dikelola
+  3.Tidak ada otentifikasi identitas, penerima tidak bisa memastikan siapa pengirim sebenarnya,karena semua pihak memakai kunci yang sama.
+## Sistem Kriptografi Asimetris
+- Kelebihan
+  1.Keamanan tinggi, karena menggunakan dua kunci yang berbeda
+  2.Distribusi kunci lebih aman, tidak perlu mengirimkan kunci rahasia ke penerima
+  3.Mendukung otentifikasi dan tandatangan digital
+  4.Cocok untuk komunikasi banyak pihak
+- Kelemahan
+  1.Proses lebih lambat, enkripsi dan deskripsi memerlukan perhitungan matematika kompleks
+  2.Membutuhkan sumber daya besar, memerlukan daya komputasi tinggi dan waktu yang lebih lama
+  3.Implementasi lebih rumit, pengelolaan duakunci perlu sistem keamanan tambahan agar tdk bocor
+- Pertanyaan 3 :
+Karena kriptografi simetris hanya menggunakan kunci tunggal untuk enkripsi dan dekripsi sehingga dalam proses distribusi sangat berisiko terhadap penyadapan atau pencurian.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+Dari praktikum ini,dapat disimpulkan bahwa kriptosistem terdiri dari beberapa komponen utama, yaitu plaintext, ciphertext, algoritma enkripsi dan dekripsi, serta kunci.Pada kriptografi simetris, prosesnya cepat karena menggunakan satu kunci yang sama, tapi memiliki kelemahan pada distribusi kunci yang berisiko disadap.Sedangkan pada kriptografi asimetris, digunakan dua kunci berbeda yaitu publik dan privat, sehingga lebih aman, namun prosesnya lebih lambat.
+Jadi, bisa disimpulkan bahwa pemilihan jenis kriptografi tergantung pada kebutuhan, jika ingin cepat gunakan sistem simetris, dan jika ingin lebih aman gunakan sistem asimetris.
 
 ---
 
