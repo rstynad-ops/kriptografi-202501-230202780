@@ -19,7 +19,7 @@ Aritmetika modular memiliki beberapa sifat penting, antara lain:
 -Penjumlahan: (𝑎+𝑐)≡(𝑏+𝑑)(mod 𝑚) 
 -Pengurangan: (𝑎−𝑐)≡(𝑏−𝑑)(mod 𝑚)
 -Perkalian: (𝑎×𝑐)≡(b×d)(mod 𝑚)
-aritmetika modular digunakan secara luas untuk mengamankan data melalui proses enkripsi dan dekripsi. Beberapa algoritma kriptografi yang menggunakan operasi modular antara lain RSA (Rivest–Shamir–Adleman), Diffie–Hellman Key Exchange, dan ElGamal Encryption. Misalnya pada RSA, proses enkripsi dilakukan dengan rumus 
+aritmetika modular digunakan secara luas untuk mengamankan data melalui proses enkripsi dan dekripsi. Beberapa algoritma kriptografi yang menggunakan operasi modular antara lain RSA (Rivest–Shamir–Adleman), Diffie–Hellman Key Exchange, dan ElGamal Encryption. Misalnya pada RSA, proses enkripsi dilakukan dengan rumus. 
 
 2. Greatest Common Divisor (GCD)
 Greatest Common Divisor (GCD) atau Faktor Persekutuan Terbesar (FPB) adalah bilangan bulat positif terbesar yang dapat membagi dua bilangan tanpa meninggalkan sisa. Sebagai contoh, GCD (18,24)=6 karena 6 adalah bilangan terbesar yang membagi kedua bilangan tersebut secara tepat. Untuk menghitung GCD, digunakan metode Algoritma Euclidean (Euclidean Algorithm) yang lebih efisien dibandingkan mencari faktor satu per satu. Prinsip algoritma ini adalah:
