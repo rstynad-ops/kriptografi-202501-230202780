@@ -9,6 +9,7 @@ Minggu ke-:3 Topik: moodmath Nama: Resty Chonifatul Jannah NIM: 230202780 Kelas:
 3. Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 ## 2. Dasar Teori
 1. Modular Arithmetic (Aritmetika Modular)
+   
 Aritmetika modular merupakan konsep dasar dalam matematika diskrit yang berperan penting dalam bidang kriptografi. Aritmetika ini bekerja berdasarkan operasi sisa hasil bagi suatu bilangan terhadap bilangan lain yang disebut modulus. Secara umum ditulis dengan notasi:
 a mod m=r (ketika bilangan 𝑎 dibagi dengan 𝑚, menghasilkan sisa 𝑟. Misalnya, 17 mod 5 = 2 karena 17 dibagi 5 menyisakan 2)
 
@@ -16,12 +17,15 @@ Dalam aritmetika modular dikenal konsep kongruensi, yaitu ketika dua bilangan me
 a ≡ b (mod m),ketika a−b habis dibagi 𝑚.Sebagai contoh, 23 ≡ 3(mod 10) karena 23 dan 3 memiliki sisa yang sama yaitu 3 saat dibagi 10.
                                                                                 
 Aritmetika modular memiliki beberapa sifat penting, antara lain:
+
 -Penjumlahan: (𝑎+𝑐)≡(𝑏+𝑑)(mod 𝑚) 
 -Pengurangan: (𝑎−𝑐)≡(𝑏−𝑑)(mod 𝑚)
 -Perkalian: (𝑎×𝑐)≡(b×d)(mod 𝑚)
+
 aritmetika modular digunakan secara luas untuk mengamankan data melalui proses enkripsi dan dekripsi. Beberapa algoritma kriptografi yang menggunakan operasi modular antara lain RSA (Rivest–Shamir–Adleman), Diffie–Hellman Key Exchange, dan ElGamal Encryption. Misalnya pada RSA, proses enkripsi dilakukan dengan rumus. 
 
 2. Greatest Common Divisor (GCD)
+   
 Greatest Common Divisor (GCD) atau Faktor Persekutuan Terbesar (FPB) adalah bilangan bulat positif terbesar yang dapat membagi dua bilangan tanpa meninggalkan sisa. Sebagai contoh, GCD (18,24)=6 karena 6 adalah bilangan terbesar yang membagi kedua bilangan tersebut secara tepat. Untuk menghitung GCD, digunakan metode Algoritma Euclidean (Euclidean Algorithm) yang lebih efisien dibandingkan mencari faktor satu per satu. Prinsip algoritma ini adalah:
 GCD (a,b) = GCD (b,a mod b),Langkah perhitungan dilakukan secara berulang hingga sisa pembagian bernilai nol.
 Misalnya, untuk mencari GCD(48,18): 48 mod 18 = 12,18 mod 12 = 6,12 mod 6 = 0, Maka diperoleh hasil GCD = 6.
