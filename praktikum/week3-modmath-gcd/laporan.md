@@ -19,7 +19,9 @@ a ≡ b (mod m),ketika a−b habis dibagi 𝑚.Sebagai contoh, 23 ≡ 3(mod 10) 
 Aritmetika modular memiliki beberapa sifat penting, antara lain:
 
 -Penjumlahan: (𝑎+𝑐)≡(𝑏+𝑑)(mod 𝑚) 
+
 -Pengurangan: (𝑎−𝑐)≡(𝑏−𝑑)(mod 𝑚)
+
 -Perkalian: (𝑎×𝑐)≡(b×d)(mod 𝑚)
 
 aritmetika modular digunakan secara luas untuk mengamankan data melalui proses enkripsi dan dekripsi. Beberapa algoritma kriptografi yang menggunakan operasi modular antara lain RSA (Rivest–Shamir–Adleman), Diffie–Hellman Key Exchange, dan ElGamal Encryption. Misalnya pada RSA, proses enkripsi dilakukan dengan rumus. 
