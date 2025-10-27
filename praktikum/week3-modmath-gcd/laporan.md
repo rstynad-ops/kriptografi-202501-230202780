@@ -157,6 +157,7 @@ Hasil Program :
 <img width="1919" height="1078" alt="hasil" src="https://github.com/user-attachments/assets/c6ab364c-bfbe-4dfd-b794-1e88103da676" />
 
 Pembahasan : Semua percobaan berhasil tanpa eror, dan hasil keluaran sesuia dengan teori dasar kriptografi.
+
 ---
 
 ## 7. Jawaban Pertanyaan
@@ -176,6 +177,7 @@ Pembahasan : Semua percobaan berhasil tanpa eror, dan hasil keluaran sesuia deng
 ## 8. Kesimpulan
 
 Berdasarkan hasil uji coba dapat disimpulakn bahwa aritmetika modular, algoritma Euclidean, invers modular, dan logaritma diskrit memiliki keterkaitan erat serta menjadi landasan utama dalam kriptografi modern. Aritmetika modular berfungsi menjaga hasil operasi tetap dalam rentan tertentu, algoritma algoritma Euclidean berperan dalam menentukan bilangan yang saling relatif prima, invers modular digunakan pada proses dekripsi dalam sistem kunci publik, dan logaritma diskrit menjadi faktor keamanan utama karena sulit dipecahkan pada modulus besar. Secara keseluruhan, ke empat konsep tersebut merupakan elemen penting yang menopang sistemkeamanan data digital dalam algoritma kriptografi seperti RSA dan Diffie-Hellman.
+
 ---
 
 ## 10. Commit Log
