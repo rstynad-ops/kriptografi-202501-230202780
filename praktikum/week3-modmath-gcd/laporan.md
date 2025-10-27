@@ -89,8 +89,10 @@ Hasil eksekusi program Caesar Cipher:
 - Pertanyaan 2: Mengapa invers modular penting dalam algoritma kunci publik (misalnya RSA)?
   
   jawab : Pada algoritma RSA, invers modular digunakan untuk menentukan kunci privat (d) berdasarkan kunci publik (e). Nilai 𝑑diperoleh sebagai invers dari 𝑒 terhadap fungsi totien Euler 𝜑(𝑛), sehingga memenuhi hubungan: 𝑒 × 𝑑 ≡ 1 (mod 𝜑(𝑛)).Proses ini menjamin bahwa pesan yang dienkripsi menggunakan kunci publik hanya dapat didekripsi menggunakan kunci privat yang sesuai. Dengan demikian, invers modular berperan sebagai mekanisme matematis yang menghubungkan kunci publik dan kunci privat, serta memastikan keamanan komunikasi dalam sistem kriptografi asimetris.
+  
 - pertanyaan 3: Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
-)
+  
+  jawab : Tantangan utama dalam logaritma diskrit untuk modulus besar Masalah utama dalam logaritma diskrit adalah sulitnya menemukan nilai pangkat yang sesuai saat modulusnya sangat besar. Tidak ada cara cepat untuk menghitungnya, sehingga membutuhkan waktu komputasi yang sangat lama. Kesulitan inilah yang membuat algoritma seperti Diffie-Hellman dan ElGamal tetap aman digunakan.
 ---
 
 ## 8. Kesimpulan
