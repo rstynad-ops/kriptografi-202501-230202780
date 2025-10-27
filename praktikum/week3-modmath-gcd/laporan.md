@@ -40,45 +40,123 @@ GCD memiliki peranan penting untuk menentukan apakah dua bilangan relatif prima 
 (- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1.Membuat file dengan nama modular_math.py di folder praktikum/week3-modmath/src/.
+2.Menyalin kode program dari panduan praktikum.
+3.Menjalankan program dengan perintah sesuai nama file.
+4.Mengaploud hasil screenshot program (hasil.png) di folder praktikumweek3-modmath/screenshots/
+5.Mengerjakan soal diskusi
 
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+*Langkah 1-Aritmetika Modular*
+``
+def mod_add(a, b, n): return (a + b) % n
+def mod_sub(a, b, n): return (a - b) % n
+def mod_mul(a, b, n): return (a * b) % n
+def mod_exp(base, exp, n): return pow(base, exp, n)  # eksponensiasi modular
+
+print("7 + 5 mod 12 =", mod_add(7, 5, 12))
+print("7 * 5 mod 12 =", mod_mul(7, 5, 12))
+print("7^128 mod 13 =", mod_exp(7, 128, 13))
+
+``
+*Langkah 2-GCD dan Algoritma Euclidean*
+``
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+print("gcd(54, 24) =", gcd(54, 24))
+``
+*Langkah 3 — Extended Euclidean Algorithm*
+``
+def egcd(a, b):
+    if a == 0:
+        return b, 0, 1
+    g, x1, y1 = egcd(b % a, a)
+    return g, y1 - (b // a) * x1, x1
+
+def modinv(a, n):
+    g, x, _ = egcd(a, n)
+    if g != 1:
+        return None
+    return x % n
+
+print("Invers 3 mod 11 =", modinv(3, 11))  # hasil: 4
+``
+*Langkah 4 — Logaritma Diskrit (Discrete Log)*
+
+``
+def discrete_log(a, b, n):
+    for x in range(n):
+        if pow(a, x, n) == b:
+            return x
+    return None
+
+print("3^x ≡ 4 (mod 7), x =", discrete_log(3, 4, 7))  # hasil: 4
+``
+Hasil Penggabungan Kode:
+``
+def mod_add(a, b, n): return (a + b) % n
+def mod_sub(a, b, n): return (a - b) % n
+def mod_mul(a, b, n): return (a * b) % n
+def mod_exp(base, exp, n): return pow(base, exp, n)  # eksponensiasi modular
+
+print("7 + 5 mod 12 =", mod_add(7, 5, 12))
+print("7 * 5 mod 12 =", mod_mul(7, 5, 12))
+print("7^128 mod 13 =", mod_exp(7, 128, 13))
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+print("gcd(54, 24) =", gcd(54, 24))
+
+def egcd(a, b):
+    if a == 0:
+        return b, 0, 1
+    g, x1, y1 = egcd(b % a, a)
+    return g, y1 - (b // a) * x1, x1
+
+def modinv(a, n):
+    g, x, _ = egcd(a, n)
+    if g != 1:
+        return None
+    return x % n
+
+print("Invers 3 mod 11 =", modinv(3, 11))  # hasil: 4
+
+def discrete_log(a, b, n):
+    for x in range(n):
+        if pow(a, x, n) == b:
+            return x
+    return None
+
+print("3^x ≡ 4 (mod 7), x =", discrete_log(3, 4, 7))  # hasil: 4
 ```
-)
-
+Hasil :
+```
+7 + 5 mod 12 = 0
+7 * 5 mod 12 = 11
+7^128 mod 13 = 3
+gcd(54, 24) = 6
+Invers 3 mod 11 = 4
+3^x ≡ 4 (mod 7), x = 4
+``` 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Hasil Program :
+<img width="1919" height="1078" alt="hasil" src="https://github.com/user-attachments/assets/c6ab364c-bfbe-4dfd-b794-1e88103da676" />
 
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
-
+Pembahasan : Semua percobaan berhasil tanpa eror, dan hasil keluaran sesuia dengan teori dasar kriptografi.
 ---
 
 ## 7. Jawaban Pertanyaan
@@ -96,16 +174,8 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
+Berdasarkan hasil uji coba dapat disimpulakn bahwa aritmetika modular, algoritma Euclidean, invers modular, dan logaritma diskrit memiliki keterkaitan erat serta menjadi landasan utama dalam kriptografi modern. Aritmetika modular berfungsi menjaga hasil operasi tetap dalam rentan tertentu, algoritma algoritma Euclidean berperan dalam menentukan bilangan yang saling relatif prima, invers modular digunakan pada proses dekripsi dalam sistem kunci publik, dan logaritma diskrit menjadi faktor keamanan utama karena sulit dipecahkan pada modulus besar. Secara keseluruhan, ke empat konsep tersebut merupakan elemen penting yang menopang sistemkeamanan data digital dalam algoritma kriptografi seperti RSA dan Diffie-Hellman.
 ---
 
 ## 10. Commit Log
