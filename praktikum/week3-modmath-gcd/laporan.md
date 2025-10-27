@@ -82,9 +82,14 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Apa peran aritmetika modular dalam kriptografi modern?
+- 
+  jawab : Aritmetika modular merupakan dasar utama dalam kriptografi modern karena digunakan dalam hampir seluruh operasi matematika pada proses enkripsi dan dekripsi. Prinsip ini bekerja pada sistem bilangan terbatas dengan modulus tertentu, sehingga hasil perhitungannya tetap berada dalam ruang nilai yang terkontrol.
+  
+- Pertanyaan 2: Mengapa invers modular penting dalam algoritma kunci publik (misalnya RSA)?
+  
+  jawab : Pada algoritma RSA, invers modular digunakan untuk menentukan kunci privat (d) berdasarkan kunci publik (e). Nilai 𝑑diperoleh sebagai invers dari 𝑒 terhadap fungsi totien Euler 𝜑(𝑛), sehingga memenuhi hubungan: 𝑒 × 𝑑 ≡ 1 (mod 𝜑(𝑛)).Proses ini menjamin bahwa pesan yang dienkripsi menggunakan kunci publik hanya dapat didekripsi menggunakan kunci privat yang sesuai. Dengan demikian, invers modular berperan sebagai mekanisme matematis yang menghubungkan kunci publik dan kunci privat, serta memastikan keamanan komunikasi dalam sistem kriptografi asimetris.
+- pertanyaan 3: Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
 )
 ---
 
