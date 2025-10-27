@@ -149,9 +149,8 @@ Hasil :
 gcd(54, 24) = 6
 Invers 3 mod 11 = 4
 3^x ≡ 4 (mod 7), x = 4
-``` 
----
-
+```
+--
 ## 6. Hasil dan Pembahasan
 Hasil Program :
 <img width="1919" height="1078" alt="hasil" src="https://github.com/user-attachments/assets/c6ab364c-bfbe-4dfd-b794-1e88103da676" />
