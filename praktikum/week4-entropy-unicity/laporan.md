@@ -4,9 +4,13 @@ Minggu ke-: 4  Topik: [judul praktikum]  Nama:Resty Chonifatul Jannah  NIM: 2302
 ---
 ## 1. Tujuan
 1.Menyelesaikan perhitungan sederhana terkait entropi kunci.
+
 2.Menggunakan teorema Euler pada contoh perhitungan modular & invers.
+
 3.Menghitung unicity distance untuk ciphertext tertentu.
+
 4.Menganalisis kekuatan kunci berdasarkan entropi dan unicity distance.
+
 5.Mengevaluasi potensi serangan brute force pada kriptosistem sederhana.
 
 ---
