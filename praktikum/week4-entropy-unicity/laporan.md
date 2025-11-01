@@ -37,15 +37,16 @@ D= redundansi pesan per karakter (berapa banyak informasi berlebih dalam plainte
 ## 3. Alat dan Bahan
 (- Python 3.x  
 - Visual Studio Code / editor lain  
-- Git dan akun GitHub  
+- Git dan akun GitHub
+- Google Chrome
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `entropy-unicity.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `entropy_unicity.py`
+4. Mengupload hasil eksekusi dangan nama file hasil.png di folder praktikum/week4-entropy_unicity/screenshot/.
+5. Membuat laporan pada  file laporan.md di folder praktikum/week4-entropy_unicity/laporan.md
 
 ---
 
