@@ -16,8 +16,7 @@ Minggu ke-: 4  Topik: entropi & unicity distance  Nama:Resty Chonifatul Jannah  
 ---
 ## 2. Dasar Teori
 -Entropi merupakan ukuran ketidakpasian atau jumlah informasi yang terkandung dalam suatu sistem.Konsep ini pertama kali diperkenalkan oleh Claude E.Shannon pada tahun 1948 dalam teori informasi.Dalam kriptografi, entropi menggambarkan tingkat ketidakpastian pesan atau kunci yang digunakan dalam suatu sistem kriptografi.Secara sistematis, entropi H(X) dari suatu variabel acak X dengan kemungkinan (P(Xi) yang di definisikan sebagai :
-
-    <img width="419" height="46" alt="Screenshot 2025-11-01 103849" src="https://github.com/user-attachments/assets/4698c51e-0ebf-44a5-80c7-1e17c1e9f8ac" />
+ <img width="419" height="46" alt="Screenshot 2025-11-01 103849" src="https://github.com/user-attachments/assets/4698c51e-0ebf-44a5-80c7-1e17c1e9f8ac" />
 
 H(X)= entropi dari variabel acak X, menyatakan jumlah rata-rata informasi(dalam satuan bit) yang dikandung oleh X, 
 X= variabel acak yang merepresentasikan sumber pesan atau kunci dalam sistem kriptografi,
