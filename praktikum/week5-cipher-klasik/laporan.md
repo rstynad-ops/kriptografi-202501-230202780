@@ -16,21 +16,24 @@ Secara matematis, proses enkripsi dapat dinyatakan dengan persamaan :
 <img width="262" height="45" alt="image" src="https://github.com/user-attachments/assets/deff2a71-5a33-4533-a57d-56d68f2d780a" />
 
 dan deskripsi dengan :
+
 <img width="245" height="35" alt="image" src="https://github.com/user-attachments/assets/8844701a-ab7f-4220-8ca6-f1c8fa90e423" />
 
 di mana :
+
 . P= huruf plaintext,
 
 . C= huruf cipertext,
 
 . k= nilai pergeseran(kunci)
    
-3. Vigenere Cipher
+2. Vigenere Cipher
 
 Vigenere Cipher merupakan perkembangan dari sistem subtitusi yang bersifat polialfabetik,diperkenalkan oleh Blaise de Vigenere pada abad ke-16. Cipher ini menggunakan serangkaian alfabet subtitusi berdasarkan kata kunci (keyword), sehinngga setiap huruf pada plaintext dapat disandikan dengan pergeseran berbeda tergantung kata kunci yang bersesuaian. Secara matematis, rumus enkripsi dinyatakan sebagai :
 <img width="281" height="44" alt="image" src="https://github.com/user-attachments/assets/732aa7f6-c563-4e8d-ba4c-14223274c550" />
 
 dengan deskripsi sebagai :
+
 <img width="309" height="50" alt="image" src="https://github.com/user-attachments/assets/11b3be12-fdcd-4914-a743-0397307e993a" />
 
 di mana:
@@ -40,7 +43,7 @@ di mana:
 
 . Ki= huruf dari kunci yang diulang sepanjang pesan
         
-5. Transposisi Cipher
+3. Transposisi Cipher
 
 Transposisi Cipher merupakan proses enkripsi yang dilakukan dengan menuliskan plaintext ke dalam matriks atau pola tertentu, kemudian membacanya kembali menurut urutan kolom atau baris yang ditentukan oleh kunci. Salah satu bentuk umum dari metode ini adalah Columnar Transposition Cipher.
 
