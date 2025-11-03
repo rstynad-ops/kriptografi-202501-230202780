@@ -1,23 +1,48 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 5  Topik: Cipher Klasik (Caesar,Vigenere, Transposisi)  Nama: Resty Chonifatul Jannah NIM: 230202780 Kelas: 5 Ikrb  
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1. Menerapkan algoritma Caesar Cipher untuk enkripsi dan dekripsi teks.
+2. Menerapkan algoritma Vigenère Cipher dengan variasi kunci.
+3. Mengimplementasikan algoritma transposisi sederhana.
+4. Menjelaskan kelemahan algoritma kriptografi klasik.
 ---
-
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+1. Caesar Cipher
+
+Caesar Cipher merupakan salah satu bentuk cipher subtitusi monoalfabetik, dimana setiap karakter dalam plaintext digantikan oleh karakter lain yang berjarak tetap pada urutan alfabet.
+Secara matematis, proses enkripsi dapat dinyatakan dengan persamaan :
+        <img width="262" height="45" alt="image" src="https://github.com/user-attachments/assets/deff2a71-5a33-4533-a57d-56d68f2d780a" />
+
+dan deskripsi dengan :
+        <img width="245" height="35" alt="image" src="https://github.com/user-attachments/assets/8844701a-ab7f-4220-8ca6-f1c8fa90e423" />
+
+di mana :
+. P= huruf plaintext,
+. C= huruf cipertext,
+. k= nilai pergeseran(kunci)
+   
+3. Vigenere Cipher
+
+Vigenere Cipher merupakan perkembangan dari sistem subtitusi yang bersifat polialfabetik,diperkenalkan oleh Blaise de Vigenere pada abad ke-16. Cipher ini menggunakan serangkaian alfabet subtitusi berdasarkan kata kunci (keyword), sehinngga setiap huruf pada plaintext dapat disandikan dengan pergeseran berbeda tergantung kata kunci yang bersesuaian. Secara matematis, rumus enkripsi dinyatakan sebagai :
+        <img width="281" height="44" alt="image" src="https://github.com/user-attachments/assets/732aa7f6-c563-4e8d-ba4c-14223274c550" />
+
+dengan deskripsi sebagai :
+        <img width="309" height="50" alt="image" src="https://github.com/user-attachments/assets/11b3be12-fdcd-4914-a743-0397307e993a" />
+
+di mana:
+. Pi= huruf plaintext ke-i
+. Ci= huruf Ciphertext ke-i
+. Ki= huruf dari kunci yang diulang sepanjang pesan
+        
+5. Transposisi Cipher
+
+Transposisi Cipher merupakan proses enkripsi yang dilakukan dengan menuliskan plaintext ke dalam matriks atau pola tertentu, kemudian membacanya kembali menurut urutan kolom atau baris yang ditentukan oleh kunci. Salah satu bentuk umum dari metode ini adalah Columnar Transposition Cipher.
+
+Contoh sederhana: plaintext “DATAAMAN” disusun dalam tabel 4 kolom, kemudian dibaca kolom demi kolom menghasilkan ciphertext “DAAAMTAN”.
 
 ---
-
 ## 3. Alat dan Bahan
 (- Python 3.x  
 - Visual Studio Code / editor lain  
