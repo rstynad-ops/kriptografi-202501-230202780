@@ -21,11 +21,11 @@ dan deskripsi dengan :
 
 di mana :
 
-. P= huruf plaintext,
+P= huruf plaintext,
 
-. C= huruf cipertext,
+C= huruf cipertext,
 
-. k= nilai pergeseran(kunci)
+K= nilai pergeseran(kunci)
    
 2. Vigenere Cipher
 
@@ -37,11 +37,12 @@ dengan deskripsi sebagai :
 <img width="309" height="50" alt="image" src="https://github.com/user-attachments/assets/11b3be12-fdcd-4914-a743-0397307e993a" />
 
 di mana:
-. Pi= huruf plaintext ke-i,
 
-. Ci= huruf Ciphertext ke-i,
+Pi= huruf plaintext ke-i,
 
-. Ki= huruf dari kunci yang diulang sepanjang pesan
+Ci= huruf Ciphertext ke-i,
+
+Ki= huruf dari kunci yang diulang sepanjang pesan
         
 3. Transposisi Cipher
 
@@ -63,7 +64,7 @@ Contoh sederhana: plaintext “DATAAMAN” disusun dalam tabel 4 kolom, kemudian
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar.py`,`vigenere.py`, dan `transpose.py`.
 4. Membuat folder screenshots lalu mengupload `hasil.png`.
-5. Mengerjakan tugas pertanyaan.)
+5. Mengerjakan tugas pertanyaan.
 
 ---
 ## 5. Source Code
