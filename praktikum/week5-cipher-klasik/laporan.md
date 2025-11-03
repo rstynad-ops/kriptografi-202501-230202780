@@ -51,22 +51,21 @@ Contoh sederhana: plaintext “DATAAMAN” disusun dalam tabel 4 kolom, kemudian
 
 ---
 ## 3. Alat dan Bahan
-(- Python 3.x  
+
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
+- Google Chrome
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+
+1. Membuat file `caesar.py` ,`vigenere.py`,dan `transpose.py` di folder `praktikum/week5-cipher-klasik/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python caesar.py`,`vigenere.py`, dan `transpose.py`.
+4. Membuat folder screenshots lalu mengupload `hasil.png`.
+5. Mengerjakan tugas pertanyaan.)
 
 ---
-
 ## 5. Source Code
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
