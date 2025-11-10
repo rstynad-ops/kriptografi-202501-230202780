@@ -193,7 +193,7 @@ Decrypted : TRANSPOSITIONCIPHER
 
 ## 6. Hasil dan Pembahasan
 **1.Caesar Ciper**
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f300cba0-ff04-47f6-beb6-d801f9caa4c3" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/67d0949d-d20e-497f-8b38-54cf08073468" />
 
 **2.Vigenere Ciper**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/371810c0-5b8a-4c49-bf32-89a85fa8ebe7" />
@@ -201,38 +201,36 @@ Decrypted : TRANSPOSITIONCIPHER
 **3.Transposisi Sederhana**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feb3d40a-57ea-4c05-a3eb-5f0b93144511" />
 
-
-
+**Pembahasan :**
+Berdasarkan hasil program yang telah dilakukan, ketiga algoritma clasik ciper,yaitu Caesar Ciper, Vigenere Ciper, dan Tranposisi Sederhana berhasil melakukan proses enkripsi dan deskripsi dengan tepat. Caesar Ciper menggeser huruf berdasarkan nilai kunci  tertentu, Vigenere Ciper mengunakan kata kunci untuk menghasilkan pola enkripsi yang lebih kompleks, sedangkan Transposisi Sederhana mengacak urutan huruf tanpa mengubah karakter aslinya. Dari hasil yang proses enkripsi deskripsi yang telah dilakukan menunjukan bahwa algoritma dapat mengubah teks  asli menjadi ciphertext kemudian di mengembalikannya sesuasi teks aslinya, hal  ini  juga yang menandakan bahwa implementasi program berjalan sesuai teori kriptografi klasik.
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+- Pertanyaan 1:Apa kelemahan utama algoritma Caesar Cipher dan Vigenère Cipher?
+- Jawab:
+Kelemahan Caesar Ciper terletak pada mekanismenya yang sangat sederhana ya sederhana dimana hanya dengan menggeser huruf dengan jumlah tertentu. Ruang kuncinya terbatas, sehingga mudah ditebak hanya dengan mencoba beberapa kali kemungkinan pergeseran. Selain itu, Pola kemunculan huruf dalam teks masih tampak jelas, sehingga metode analisis frekuensi dapat dengan mudah digunakan untuk menebak isi pesan.
+
+Vigenère Cipher memiliki kelemahan ketika kunci yang digunakan terlalu pendek atau pola kuncinya berulang. Pengulangan ini menimbulkan pola tertentu pada hasil enkripsi, sehingga seseorang dapat memperkirakan panjang kuncinya. Setelah panjang kunci diketahui, ciphertext bisa dipecah berdasarkan posisi huruf terhadap kunci, dan setiap bagian dapat dianalisis frekuensinya sampai pesan asli berhasil diungkap.
+
+- Pertanyaan 2:Mengapa cipher klasik mudah diserang dengan analisis frekuensi?
+- Jawab: Ciper Klasik mudah diserang dengan analisis frekuensi karena proses enkripsinya tidak benar-benar "mengacak" pola bahasa. Huruf-huruf yang sering muncul pada teks alsi tetap muncul dengan frekuensi yang hampir sama pada ciphertext,tetapi dalam bentuk huruf lain. Bahasa memiliki pola khas , misalnya huruf tertentu sering muncul, ada kombinasi huruf yang umum, dan ada huruf yang jarang dipakai. Pola-pola ini masih terbawa dalam ciphertext, sehingga penyerang cukup memetakan frekuensi kemunculan huruf untuk menebak huruf aslinya satu per satu.
+  
+- Pertanyaan 3:Bandingkan kelebihan dan kelemahan cipher substitusi vs transposisi.
+- Jawab:Cipher substitusi mengganti setiap huruf dengan huruf lain berdasarkan aturan tertentu, sedangkan cipher transposisi hanya menukar posisi huruf tanpa mengganti karakter itu sendiri. Kelebihan cipher substitusi adalah sederhana dan cepat diterapkan, tetapi mudah diretas melalui analisis frekuensi. Sementara itu, cipher transposisi lebih sulit dipecahkan dengan analisis frekuensi karena huruf tidak berubah, namun tetap dapat diserang jika pola penukarannya terdeteksi.
+
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+Ketiga algoritma berhasil melakukan proses enkripsi dan dekripsi dengan benar sehingga setiap ciphertext yang dihasilkan dapat dikembalikan menjadi plaintext asli menggunakan kunci yang sama. Penggunaan caesar cipher terbukti paling sederhana namun mudah dipecahkan, Vigenère cipher memberikan keamanan lebih baik dengan penggunaan kunci sedangkan transposisi mengacak urutan huruf untuk menambah tingkat keamanan pesan.
 
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit week5-cipher-klasik
+Author: Resty Chonifatul Jannah
+Date:   2025-11-10
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week5: Cipher Klasik ( Caesar, Vigenere, Transposisi)
 ```
