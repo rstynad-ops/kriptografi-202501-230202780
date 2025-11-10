@@ -192,17 +192,17 @@ Decrypted : TRANSPOSITIONCIPHER
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+**1.Caesar Ciper**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f300cba0-ff04-47f6-beb6-d801f9caa4c3" />
 
-Hasil eksekusi program Caesar Cipher:
+**2.Vigenere Ciper**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/371810c0-5b8a-4c49-bf32-89a85fa8ebe7" />
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+**3.Transposisi Sederhana**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feb3d40a-57ea-4c05-a3eb-5f0b93144511" />
+
+
+
 
 ---
 
