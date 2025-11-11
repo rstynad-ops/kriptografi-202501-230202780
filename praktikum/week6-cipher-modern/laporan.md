@@ -1,21 +1,21 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 6  Topik: Cipher Modern Nama: Resty Chonifatul Jannah NIM: 230202780  Kelas: 5 Ikrb  
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1. Mengimplementasikan algoritma DES untuk blok data sederhana.
+2. Menerapkan algoritma AES dengan panjang kunci 128 bit.
+3. Menjelaskan proses pembangkitan kunci publik dan privat pada algoritma RSA.
 ---
-
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Cipher Modern merupakan teknik penyandian data dalam kriptogaarafi yang digunakan pada era komputer dan jaringan digital. berbeda dengan cipher klasik yang hanya mengandalkan subtitusi dan transposisi sederhana,cipher modern menggunakan algoritma matematis kompleks, operasi bit, transformasi blok, serta kunci yang panjang dan acak. tujuan utamanya adalah untuk memastikan kerahasiaan, integritas, serta keamanan data dalam proses komunikasi digital.
 
+Karakteristik Cipher Modern
+1. Menggunakan kunci yang panjang dan acak sehingga sulit ditebak.
+2. Bekerja dengan data digital, yaitu bit atau blok data.
+3. Tahan terhadap serangan kriptanalisis modern, seperti brute-force, differential cryptanalysis, dan linear cryptanalysis.
+4. Cepat dan efisien, karena dioptimalkan untuk perangkat keras maupun perangkat lunak.
+5. Memiliki fungsi enkripsi dan dekripsi yang terstruktur, dengan operasi seperti XOR, rotasi bit, substitusi, dan permutasi.
 ---
 
 ## 3. Alat dan Bahan
