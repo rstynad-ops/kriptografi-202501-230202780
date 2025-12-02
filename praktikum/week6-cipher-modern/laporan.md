@@ -116,20 +116,25 @@ Decrypted: RSA Example
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Hasil eksekusi implementasi DES:
 
-Hasil eksekusi program Caesar Cipher:
+<img width="1919" height="1079" alt="Screenshot 2025-12-02 233014" src="https://github.com/user-attachments/assets/88a3dbbc-bc99-41d5-a0aa-845d4e5c2759" />
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+Hasil eksekusi implementasi AES:
 
+<img width="1920" height="1080" alt="Screenshot 2025-12-02 233543" src="https://github.com/user-attachments/assets/0a71cb3a-e181-4a1e-bd6e-8d436ed3ac4f" />
+
+Hasil eksekusi implementasi RSA:
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-02 233729" src="https://github.com/user-attachments/assets/99ac8be0-e8ac-4e41-9bb3-400602537962" />
+
+Pembahasan: 
+
+Hasil eksekusi menunjukkan bahwa ketiga algoritma bekerja sesuai konsepnya:
+1. DES berhasil mengenkripsi dan mendekripsi teks dengan benar, namun keamanannya lemah karena panjang kuncinya pendek.
+2. AES menghasilkan ciphertext acak dan mampu mengembalikan plaintext dengan tepat, menunjukkan keamanan dan efisiensi yang tinggi.
+3. RSA juga berjalan baik, menggunakan kunci publik untuk enkripsi dan kunci privat untuk dekripsi, membuktikan konsep asimetrisnya.
 ---
-
 ## 7. Jawaban Pertanyaan
 - Pertanyaan 1: Apa perbedaan mendasar antara DES, AES, dan RSA dalam hal kunci dan keamanan?
 - Pertanyaan 2: Mengapa AES lebih banyak digunakan dibanding DES di era modern?
@@ -157,15 +162,10 @@ Proses pembangkitan kuncinya secara sederhana adalah:
 Keamanan RSA berasal dari fakta bahwa meskipun n diketahui publik, sangat sulit memfaktorkan n kembali menjadi p dan q, selama nilai p dan q sangat besar (biasanya 2048 bit atau lebih).
 
 ---
-
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
-
-
+DES, AES, dan RSA berbeda dalam jenis algoritma dan keamanan. DES sudah tidak digunakan karena kunci 56 bit mudah diretas sehingga AES menjadi standar keamanan baru karena lebih aman dan efisien dengan ukuran kunci hingga 256 bit. Sedangkan RSA termasuk algoritma asimetris karena menggunakan dua kunci berbeda untuk menjaga keamanan datanya dan biasanya digunakan untuk tanda tangan digital.
 
 ---
-
 ## 10. Commit Log
 ```
 commit week6-cipher-,modern
