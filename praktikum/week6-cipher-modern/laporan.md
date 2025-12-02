@@ -17,12 +17,10 @@ Karakteristik Cipher Modern
 4. Cepat dan efisien, karena dioptimalkan untuk perangkat keras maupun perangkat lunak.
 5. Memiliki fungsi enkripsi dan dekripsi yang terstruktur, dengan operasi seperti XOR, rotasi bit, substitusi, dan permutasi.
 
-1.DES (Data Encryption Standard)
+1. DES (Data Encryption Standard)
 DES adalah algoritma kriptografi modern awal yang menggunakan kunci simetrik, artinya kunci yang sama dipakai untuk proses enkripsi dan dekripsi. DES bekerja dengan membagi data menjadi blok 64 bit dan melakukan proses substitusi serta permutasi dalam 16 putaran menggunakan kunci sepanjang 56 bit. Walaupun DES dulu sangat populer dan digunakan secara luas, kini dianggap tidak lagi aman karena kuncinya terlalu pendek sehingga dapat diretas menggunakan brute force. Karena itu, DES sudah digantikan oleh algoritma yang lebih kuat seperti AES.
-
-2.AES (Advanced Encryption Standard)
+2. AES (Advanced Encryption Standard)
 AES adalah algoritma enkripsi simetrik yang menjadi standar modern dan sangat aman digunakan saat ini. AES bekerja pada blok data 128 bit dengan panjang kunci 128, 192, atau 256 bit, membuatnya lebih tahan terhadap serangan brute force. Algoritma ini menggunakan beberapa langkah seperti SubBytes, ShiftRows, MixColumns, dan AddRoundKey, yang dilakukan secara berulang dalam 10–14 putaran tergantung panjang kunci. AES banyak dipakai pada sistem keamanan modern seperti WiFi, VPN, aplikasi pesan instan, dan penyimpanan data karena cepat, efisien, dan sangat kuat.
-
 3. RSA (Rivest-Shamir-Adleman)
 RSA merupakan algoritma kriptografi asimetrik yang menggunakan dua kunci berbeda: kunci publik untuk enkripsi dan kunci privat untuk dekripsi. Keamanan RSA bergantung pada kesulitan memfaktorkan bilangan besar yang merupakan hasil perkalian dua angka prima yang sangat besar. RSA tidak cocok untuk mengenkripsi data dalam jumlah besar karena prosesnya lebih lambat, tetapi sangat ideal untuk pertukaran kunci, tanda tangan digital, dan autentikasi. RSA menjadi dasar keamanan komunikasi internet seperti HTTPS dan protokol email aman.
 
@@ -133,28 +131,42 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+- Pertanyaan 1: Apa perbedaan mendasar antara DES, AES, dan RSA dalam hal kunci dan keamanan?
+- Pertanyaan 2: Mengapa AES lebih banyak digunakan dibanding DES di era modern?
+- Pertanyaan 3: Mengapa RSA dikategorikan sebagai algoritma asimetris, dan bagaimana proses pembangkitan kuncinya?
+ Jawab:
+1. DES dan AES adalah algoritma enkripsi simetris, artinya menggunakan satu kunci yang sama untuk proses enkripsi dan dekripsi. DES menggunakan kunci yang relatif pendek (56 bit), sehingga sekarang dianggap tidak aman karena mudah diretas menggunakan brute force. Sementara itu, AES menggunakan kunci jauh lebih panjang (128/192/256 bit) sehingga sangat kuat dan tahan terhadap serangan modern. RSA adalah algoritma enkripsi asimetris, yang berarti menggunakan dua kunci berbeda: kunci publik untuk enkripsi dan kunci privat untuk dekripsi. Keamanannya tidak bergantung pada panjang kunci simetris, tetapi pada kesulitan matematis memfaktorkan bilangan prima besar, yang membuatnya aman untuk komunikasi dan autentikasi.
+2. AES lebih banyak digunakan karena jauh lebih aman dan efisien dibanding DES. Kunci DES hanya 56 bit, yang dapat diretas dengan brute force dalam waktu singkat menggunakan komputer modern. Sebaliknya, AES menawarkan kunci hingga 256 bit yang sangat sulit ditembus bahkan oleh superkomputer. Selain itu, AES dirancang agar lebih cepat, lebih fleksibel, dan lebih optimal digunakan pada perangkat modern seperti smartphone, komputer, maupun perangkat IoT. Karena faktor keamanan dan performa inilah AES menjadi standar enkripsi global yang menggantikan DES.
+3. RSA disebut algoritma asimetris karena menggunakan dua kunci berbeda namun saling terkait:
+   - Kunci publik → digunakan untuk enkripsi atau verifikasi tanda tangan
+   - Kunci privat → digunakan untuk dekripsi atau membuat tanda tangan
+
+Kedua kunci tersebut tidak dapat saling menggantikan, sehingga bersifat asimetris.
+
+Proses pembangkitan kuncinya secara sederhana adalah:
+
+1. Pilih dua bilangan prima besar, misalnya 𝑝 dan 𝑞.
+2. Hitung 𝑛 = 𝑝×𝑞, yang akan menjadi bagian dari kunci publik.
+3. Hitung nilai totien: 𝜙(𝑛) = (𝑝−1)(𝑞−1).
+4. Pilih bilangan 𝑒 yang relatif prima terhadap 𝜙(𝑛) → ini menjadi eksponen publik.
+5. Hitung nilai 𝑑 sebagai invers modular dari 𝑒 terhadap 𝜙(𝑛) → ini menjadi eksponen privat.
+6. Hasilnya:
+   . Kunci publik = (e, n)
+   . Kunci privat = (d, n)
+
+Keamanan RSA berasal dari fakta bahwa meskipun n diketahui publik, sangat sulit memfaktorkan n kembali menjadi p dan q, selama nilai p dan q sangat besar (biasanya 2048 bit atau lebih).
+
 ---
 
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
----
 
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+
 
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
 commit week6-cipher-,modern
 Author: Resty Chonifatul Jannah <rstynad@gmail.com>
