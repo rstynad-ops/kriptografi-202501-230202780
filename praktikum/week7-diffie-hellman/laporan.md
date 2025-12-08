@@ -1,40 +1,30 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 7 Topik: Deffie-Hellman LKey Exchange Nama: Resty Chonifatul Jannah  NIM: 230202780 Kelas: 5 Ikrb  
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1. Melakukan simulasi protokol Diffie-Hellman untuk pertukaran kunci publik.
+2. Menjelaskan mekanisme pertukaran kunci rahasia menggunakan bilangan prima dan logaritma diskrit.
+3. Menganalisis potensi serangan pada protokol Diffie-Hellman (termasuk serangan Man-in-the-Middle / MITM).
 ---
-
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
+## 2. Dasar Teori  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
+- Google Chrome
+  
 ---
-
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
 1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
 
 ---
-
 ## 5. Source Code
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
@@ -84,12 +74,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit week7-diffie-hellman
+Author: Resty Chonifatul Jannah <rstynad@gmail.com>
+Date: 2025-12-08
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week7-diffie-hellman: Diffie-Hellman Key Exchange
 ```
