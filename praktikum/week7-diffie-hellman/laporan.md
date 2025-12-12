@@ -22,7 +22,7 @@ Contoh format:
 1. Membuat file `caesar_cipher.py` di folder `praktikum/week7-diffie-hellman/src/`.
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
-4. Menjawab kuis
+4. Menjawab Pertanyaan diskusi
 ---
 ## 5. Source Code
 (Salin kode program utama yang dibuat atau dimodifikasi.  
