@@ -53,25 +53,19 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan  
-- Pertanyaan 1: 
-- Pertanyaan 2: 
-- Pertanyaan 3:
+- Pertanyaan 1: Mengapa Diffie-Hellman memungkinkan pertukaran kunci di saluran publik?
+- Pertanyaan 2: Apa kelemahan utama protokol Diffie-Hellman murni?
+- Pertanyaan 3:Bagaimana cara mencegah serangan MITM pada protokol ini?
+Jawab:
+1. Karena Diffie-Hellman tidak pernah mengirimkan kunci rahasia secara langsung. yang dikirim hanya angka-angka biasa yang boleh dilihat siapa pun. dari angka-angka itu, masing-masing pihak bisa menghitung sendiri kunci rahasia yang sama. orang lain yang mengintip tidak bisa menebak kuncinya karena perhitungannya sangat sulit dibalik.
+2. Kelemahan utama Diffie-Hellman murni adalah tidak adanya autentikasi, sehingga pihak yang terlibat tidak bisa memastikan apakah kunci publik yang diterima bener milik lawan komunikasi. Akibatnya, protokal ini rentan terhadap Man-in-the-Middle attack(MITM), dimana penyerang dapat menyesipkan diri ditengah dan dapat membuat dua kunci berbeda dangan masing-masing pihak tanpa diketahui.
+3. Serangan MITM dapat dicegah dengan menambahkan mekanisme autentikasi pada pertukaran kunci. Cara umum yang digunakan yaitu: Menggunakan tanda tangan digital(digital signature) untuk menandatangani nilai publik sehingga identitas pihak dapat diverifikasi, menggunakan sertifikat digital (CA) serpeti pada TLS/HTTPS agar kunci publik terjamin keasliannya, menggabungkan Diffie-Hellman dengan protokol autentikasi seperti password, token, listrik, atau kunci publik.
 
 ---
-
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
 ---
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
 ## 10. Commit Log
 ```
 commit week7-diffie-hellman
