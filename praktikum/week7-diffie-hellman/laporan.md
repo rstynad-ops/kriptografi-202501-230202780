@@ -18,25 +18,38 @@ Diffie-Hellman Key Exchange merupakan protokol kriptografi yang memungkinkan dua
   
 ---
 ## 4. Langkah Percobaan
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week7-diffie-hellman/src/`.
+1. Membuat file `diffie_hellman.py` di folder `praktikum/week7-diffie-hellman/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
-4. Menjawab Pertanyaan diskusi
+3. Menjalankan program dengan perintah `python diffie_helllman.py`.
+4. Membuat folder screenshots dan mengupload file hasil.jpg pada folder`praktikum/week7-diffie-hellman/screenshot/.
+5. Mengerjakan soal yang ada pada folder praktikum/week7-diffie-helman/laporan.md/
 ---
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+Langkah 1- Diffie-helman
+```import random
+# parameter umum (disepakati publik)
+p = 23  # bilangan prima
+g = 5   # generator
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+# private key masing-masing pihak
+a = random.randint(1, p-1)  # secret Alice
+b = random.randint(1, p-1)  # secret Bob
+
+# public key
+A = pow(g, a, p)
+B = pow(g, b, p)
+
+# exchange public key
+shared_secret_A = pow(B, a, p)
+shared_secret_B = pow(A, b, p)
+
+print("Kunci bersama Alice :", shared_secret_A)
+print("Kunci bersama Bob   :", shared_secret_B)
 ```
-)
+Langkah 2- Analisis serangan MITM (Men-In-The_Middle)
+```
 
 ---
-
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
