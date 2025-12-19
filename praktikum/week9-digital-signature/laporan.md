@@ -52,9 +52,15 @@ signature = pkcs1_15.new(private_key).sign(h)
 print("Signature:", signature.hex())
 ```
 Langkah 2-Verifikasi Tanda Tangan
-```
+```try:
+    pkcs1_15.new(public_key).verify(h, signature)
+    print("Verifikasi berhasil: tanda tangan valid.")
+except (ValueError, TypeError):
+    print("Verifikasi gagal: tanda tangan tidak valid.")
 ```
 Langkah 3-Uji Modifikasi Pesan 
+```
+```
 
 ---
 
