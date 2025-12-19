@@ -34,12 +34,27 @@ Selain itu, terdapat DSA (digital Signature Algorithm) yang dikembangkan oleh Na
 ---
 ## 5. Source Code
 Langkah 1-Generate Key dan Buat Tanda Tangan
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+```from Crypto.PublicKey import RSA
+from Crypto.Signature import pkcs1_15
+from Crypto.Hash import SHA256
+
+# Generate pasangan kunci RSA
+key = RSA.generate(2048)
+private_key = key
+public_key = key.publickey()
+
+# Pesan yang akan ditandatangani
+message = b"Hello, ini pesan penting."
+h = SHA256.new(message)
+
+# Buat tanda tangan dengan private key
+signature = pkcs1_15.new(private_key).sign(h)
+print("Signature:", signature.hex())
 ```
-)
+Langkah 2-Verifikasi Tanda Tangan
+```
+```
+Langkah 3-Uji Modifikasi Pesan 
 
 ---
 
