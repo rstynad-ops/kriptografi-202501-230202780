@@ -1,44 +1,39 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 9 Topik: Digital Signature (RSA/DSA)  Nama: Resty Chonifatul Jannah NIM: 230202780 Kelas: 5 ikrb
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Mengimplementasikan tanda tangan digital menggunakan algoritma RSA/DSA.
+2. Memverifikasi keaslian tanda tangan digital.
+3. Menjelaskan manfaat tanda tangan digital dalam otentikasi pesan dan integritas data.
 
 ---
-
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Digital signature merupakan mekanisme kriptografi yang mulai berkembang sejak akhir 1970-an setelah diperkenalkannya konsep kriptografi kunci publik oleh Diffie dan Hellman, dengan tujuan memberikan jaminan keamanan pada dokumen dan pesan digital agar memiliki kekuatan kepercayaan yang setara dengan tanda tangan konvensional. Digital signature berfungsi untuk menjamin keasilan pengirim, keutuhan data, dan nirpenyangkalan, sehinggga pesan yang dikirim tidak dapat disangkal oleh pengirimnya.
+
+Salah satu algoritma yang paling banyak digunakan adalah RSA, yang diperkenalkan pada tahun 1997 oleh Rivest, Shamir, dan Adleman, dan memiliki keunggulan karena dapat digunakan baik untuk proses enkripsi maupun tanda tangan digital, dimana penandatanganan dilakukan menggunakan kunci privat dan proses verifikasi menggunakan kunci publik.
+
+Selain itu, terdapat DSA (digital Signature Algorithm) yang dikembangkan oleh National Institute of Standards and Tachnology (NIST) pada tahun 1991 sebagai standar resmi tanda tangan digital, yang secara khusus dirancang hanya untuk digital signature serta menghasilkan tanda tangan berdasarkan kunci privat, nilai hash pesan, dan bilangan acak. Hingga saat ini, RSA dan DSA menjadai komponen penting dalam sistem keamanan informasi modern karena banyak diterapkan pada sertifikat digital, transaksi elektronik, dan berbagi layanan komunikasi daring yang membutuhkan tingkat keamanan dan kepercayaan yang tinggi.
 
 ---
-
 ## 3. Alat dan Bahan
-(- Python 3.x  
+- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+- Google Chrome
 
 ---
-
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `signature.py` di folder `praktikum/week9-digital-signature/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python signature.py`.
+4. Mencoba memodifikasi program
+5. Menjawab soal diskusi
+6. Membuat folder `Screenshots` di folder `praktikum/wekk9-digital` lalu mengupload hasil praktikum di dalam folder tersebut.
 
 ---
-
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
+Langkah 1-Generate Key dan Buat Tanda Tangan
 ```python
 # contoh potongan kode
 def encrypt(text, key):
@@ -75,21 +70,11 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit Week9-digital-signature
+Author: Resty Chonifatul Jannah
+Date:   2025-12-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week9-digital-signature: implementasi Caesar Cipher dan laporan )
 ```
