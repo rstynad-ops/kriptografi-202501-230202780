@@ -90,10 +90,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+- Pertanyaan 1: Apa perbedaan utama antara enkripsi RSA dan tanda tangan digital RSA?
+- Pertanyaan 2: Mengapa tanda tangan digital menjamin integritas dan otentikasi pesan?
+- Pertanyaan 3: Bagaimana peran Certificate Authority (CA) dalam sistem tanda tangan digital modern?
+Jawab:
+1. perbedaan utama terletak pada tujuan penggunaan dan kunci yang digunakan. Enkripsi RSA bertujuan untuk menjaga kerahasian pesan, dimana pesan dienkripsi menggunakan kunci publik penerima dan hanya dapat dienkripsi dengan kunci privat penerima. Sebaliknya, tanda tangan digital DSA bertujuan untuk menjamin keaslian dan integritas pesan, dimana pengirim menandatangani nilai hash pesan menggunakan kunci rivat pengirim, lalu penerima menverifikasinya menggunakan kunci publik pengirim.
+2. Tanda tangan digital menjamin integritas karena proses penandatanganan dilakukan terhadap hash pesan, jika isi pesan diubah sedikit saja, nilai hash akan berbeda dan tanda tangan menjadi tidak valid. Selain itu, tanda tengan digital menjamin otentikasi karena hanya pemilik kunci privat yang dapat membuat tanda tangan yang sah, sehingga penerima dapat memastikan bahwa pesan benar-benar berasal dari pengirim yang memiliki kunci privat tersebut.
+3. Certificate Authority (CA) berperan sebagi pihak tepercaya yang memverifikasi identitas pemilik kunci publik dan menerbitkan sertifikat digital. Sertifikat ini mengaitkan identitas pengguna dangan kunci publiknya, sehingga penerima pesan dapat mempercayai bahwa kunci publik yang digunakan untuk verifikasi tanda tangan digital memang milik pengirim asli. Dengan adanya CA, sistem tanda tangan digital dapat diterapkan secara aman dan tepercaya dalam skala besar, seperti pada SSL atau TLS dan transaksi elektronik.
 ---
 
 ## 8. Kesimpulan
