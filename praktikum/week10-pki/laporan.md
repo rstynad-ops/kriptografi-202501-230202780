@@ -9,9 +9,16 @@ Minggu ke-: 10 Topik:Publik Key Infrastructure(PKI & Certificate Authority)  Nam
    
 ---
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
-
+Public Key Infrastructure (PKI) merupakan sebuah kerangka kerja keamanan yang menggunakan kriptografi kunci publik (asimetris) untuk menjamin kerahasian, integritas, autentikasi, juga non-repudiation dalam komunikasi digital. PKI mengelola proses pembuatan, distribusi, penyimpanan, validasi, dan pencabutan sertifikat digital. PKI bekerja dengan memanfaatkan pasangan kuci publik dan kunci privat, yang mana kunci publik digunakan untuk enkripsi dan verifikasi tanda tanga digital, sedangkan kunci privat digunakan untuk deskripsi dan pembuatan tanda tangan digital. PKI banyak diterapkan pada sistem SSL/TLS (HTTPS), email aman,VPN, dan keamanan IoT
+Komponen utama PIK : 
+- Certificate Authority (CA)
+- Registration Authority (RA)
+- Sertifikat digital
+- Repository sertifikat
+- Certificate Revocation List (CRL) atau OCSP
+Certificate Authority (CA) adalah pihak ketiga tepercaya dalam sistem PKI yang bertugas untuk memverifikasi identitas pengguna atau sistem serta menerbitkan sertifikat digital. Sertifikat digital yang diterbitkan CA mengaitkan identitas pemilik dengan kunci publiknya dan ditandatangani menggunakan kunci privat CA. Certificate Authority (CA) berperan sebagai akar kepercayaan (trust anchor). Jika dertifikat tidak lagi valid atau terjadi pelanggaran keamanan,Ca dapat mencabut sertifikat tersebut melalui CRL atau Online Certificate Status
+Protocol (OCSP). Kepercayaan pada komunikasi digital sangat bergantung pada kredibilitas CA.
+PKI ialah sistem manajemen keamanan secara keseluruhan, sedaangkan CA adalah komponen inti PIK yang menjamin keabsahan identitas dan kunci publik. Tanpa CA, PKI tidak dapat membangun kepercayaan antara entitas dalam jarian terbuka.
 ---
 ## 3. Alat dan Bahan
 - Python 3.x  
@@ -28,8 +35,6 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
  
 ---
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
 
 ```python
 # contoh potongan kode
