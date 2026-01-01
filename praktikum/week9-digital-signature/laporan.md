@@ -59,7 +59,6 @@ try:
 except (ValueError, TypeError):
     print("Verifikasi gagal: tanda tangan tidak valid.")
 ```
-```
 Langkah 3-Uji Modifikasi Pesan 
 ```
 fake_message = b"Hello, ini pesan palsu."
