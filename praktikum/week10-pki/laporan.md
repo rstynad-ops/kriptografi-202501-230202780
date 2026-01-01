@@ -62,8 +62,8 @@ Hasil eksekusi program Caesar Cipher:
 Jawab :
 1. Certificate Authority (CA) berfungsi sebagai pihak tepercaya yang menerbitkan dan memverifikasi sertifikat digital, CA memeastikan bahwa identitas pemilik sertifikat (seperti website atau server) benar-benar valid dan sesuai dengan kunci publik yang digunakan. Dengan adanya CA, pengguna dapat mempercayai bahwa komunikasi dilakukan dengan pihak yang sah, bukan pihak palsu.
 2. self-signed certificate ditandatangai oleh pemiliknya sendiri tanpa verifikasi dari pihak ketiga tepertcaya. Akibatnya,browser atau aplikasi tidak dapat memastikan keaslian identitas server dan akan menampilkan peringatan keamanan. Dalam sistem produksi, hal ini beresiko karena sertifikat tersebut mudah dipalsukan dan tidak memberikan tingkat kepercayaan yang cukup untuk melindungi komunikasi pengguna.
-3. Public Key Infrastructure (PKI) mencegah serangan Man-in-the-Middle dengan menggunakan sertifikat digital yang diverivikasi oleh CA. saat koneksi TSL/Https di buat, klien akan memeriksa keabsahan sertifikat server, termasuk tanda tangan Ca dan masa berlakunya. Jika sertifikat valid, klien dan server melakukan pertukaran kunci secara aman untuk mengenkripsikan data, sehingga pihak ketiga tidak dapat menyadap atau memodifikasi konsumsi 
-
+3. Public Key Infrastructure (PKI) mencegah serangan Man-in-the-Middle dengan menggunakan sertifikat digital yang diverivikasi oleh CA. saat koneksi TSL atau HTTPS dibuat, klien akan memeriksa keabsahan sertifikat server, termasuk tanda tangan Ca dan masa berlakunya. Jika sertifikat valid, klien dan server melakukan pertukaran kunci secara aman untuk mengenkripsikan data, sehingga pihak ketiga tidak dapat menyadap atau memodifikasi komunikasi 
+---
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan
 )
