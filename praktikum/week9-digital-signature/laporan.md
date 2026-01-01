@@ -62,6 +62,8 @@ try:
 except (ValueError, TypeError):
     print("Verifikasi gagal: tanda tangan tidak valid.")
 ```
+Hasil:
+```
 Langkah 3-Uji Modifikasi Pesan 
 ```
 # Modifikasi pesan
