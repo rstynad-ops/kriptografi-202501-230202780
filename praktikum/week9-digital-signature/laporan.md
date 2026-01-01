@@ -63,6 +63,10 @@ try:
 except (ValueError, TypeError):
     print("Verifikasi gagal: tanda tangan tidak valid.")
 ```
+Hasil :
+```
+Verifikasi berhasil: tanda tangan valid.
+```
 Langkah 3-Uji Modifikasi Pesan 
 ```
 fake_message = b"Hello, ini pesan palsu."
@@ -74,20 +78,21 @@ try:
 except (ValueError, TypeError):
     print("Verifikasi gagal: tanda tangan tidak cocok dengan pesan.")
 ```
+Hasil :
+```
+Verifikasi gagal: tanda tangan tidak cocok dengan pesan.
+```
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Hasil eksekusi program digital signature dengan RSA/DSA
 
-Hasil eksekusi program Caesar Cipher:
+<img width="1919" height="1023" alt="hasil signature" src="https://github.com/user-attachments/assets/8227968b-aa0a-43bd-a65c-e12cc3ae2761" />
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+<img width="1919" height="1020" alt="hasil signatur modifikasi" src="https://github.com/user-attachments/assets/390f3cdd-821d-4f10-8f83-2edb10f0630a" />
+
+Penjelasan :
+Praktikum ini diawali dengan membuat serta memverivikasi tanda tangan digital menggunakan RSA. Pertama , membuat tanda tangan dari sebuah pesan, kemudian diverifikasi tanpa mengubah isi dalam pesan. Hasilnya, Verifikasi berhasil karena tanda tangan tersebut sudah sesuai dengan pesan yang ibuat sebelumnya. Setelah itu di modifikasi dengan mengubah isi dalam pesan tetapi tetap menggunakan tanda tangan yang sama, pada saat verifikasi hasilnya gagal. Dari percobaan tersebut menunjukan bahwa tanda tangan digital hanya berlaku untuk pesan asli, jika pesan di dalamnya diubah sedikit saja, sistem dapat langsung mendeteksi dan menolaknya. hal ini menunjukan bahwa digital signature memang dirancang untuk menjaga keaslian serta integritas pesan.
 
 ---
 
@@ -102,7 +107,7 @@ Jawab:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Praktikum ini dapat disimpilkan bahwa tanda tangan digital hanya akan valid jika pesaan yang diverifikasi sama persis dengan pesan pada saat tanda tangan itu dibuat. Pada saat pesan diubah sedikit saja, maka proses verifikasi akan gagal karena hash-nya sudah berbeda. hal ini menunjukan bahwa digital signature sangat efektif dalam menjaga keaslaian, integritas, dan juga keamanan data yang dikirimkan.
 
 ---
 
