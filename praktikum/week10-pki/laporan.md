@@ -35,13 +35,10 @@ PKI ialah sistem manajemen keamanan secara keseluruhan, sedaangkan CA adalah kom
  
 ---
 ## 5. Source Code
-
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+      Code python dengan file pki_cert.py
 ```
-)
+```
+
 
 ---
 
