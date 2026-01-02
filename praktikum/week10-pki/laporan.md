@@ -37,7 +37,7 @@ PKI ialah sistem manajemen keamanan secara keseluruhan, sedaangkan CA adalah kom
  
 ---
 ## 5. Source Code
-      Code python dengan file pki_cert.py
+      Code python dengan file pki_cert.py :
 ```from cryptography import x509
 from cryptography.x509.oid import NameOID
 from cryptography.hazmat.primitives import hashes, serialization
@@ -65,15 +65,13 @@ cert = (
     .not_valid_after(datetime.utcnow() + timedelta(days=365))
     .sign(key, hashes.SHA256())
 
-```
-# Simpan sertifikat
+```# Simpan Sertifikat
 with open("cert.pem", "wb") as f:
     f.write(cert.public_bytes(serialization.Encoding.PEM))
 
 print("Sertifikat digital berhasil dibuat: cert.pem")
 ```
 ---
-
 ## 6. Hasil dan Pembahasan
 Hasil eksekusi program python pki_cert.py :
 
