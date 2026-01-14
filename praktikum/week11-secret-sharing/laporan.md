@@ -1,5 +1,5 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: 11 Topik: [judul praktikum]  Nama:Resty Chonifatul jannah  NIM: 230202780  Kelas: 5 Ikrb  
+Minggu ke-: 11 Topik: Secret Sharing  Nama:Resty Chonifatul jannah  NIM: 230202780  Kelas: 5 Ikrb  
 
 ---
 ## 1. Tujuan
@@ -9,8 +9,9 @@ Minggu ke-: 11 Topik: [judul praktikum]  Nama:Resty Chonifatul jannah  NIM: 2302
 
 ---
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Shamir secret sharing (SSS) merupakan sebuah skema kriptografi yang diperkenalkan oleh Adi Shamir pada tahun 1979 untuk membagi sebuah rahasia (secret) menjadi beberapa bagian (sheres), sehingga rahasia hanya dapat direkontruksi jika minimal k atau bagian digabungkan, kurang dari k bagian tidak memberikan informasi apapun tentang rahasia.
+
+Shamir secret shering bekerja berdasarkan prinsip interpolasi polinominal pada bidang hingga, yakni sebuah polinomial berderajat K - 1 dapat ditenteukan secara unik minimal K titik. Pada proses pembangkitan share, sebuah rahasia S ditempatkan sebagai konstanta dalam polinomial acak 
 
 ---
 
@@ -70,22 +71,11 @@ Hasil eksekusi program Caesar Cipher:
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
 ---
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+Author: Resty Chonifatul Jannah <rstynad@gmail.com>
+Date:   2026-01-14
+
+    week11-secret-sharing: implementasi Caesar Cipher dan laporan )
 ```
