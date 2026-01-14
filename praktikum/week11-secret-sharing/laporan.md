@@ -53,10 +53,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-- Pertanyaan 1:
-- Pertanyaan 2: 
-- Pertanyaan 3: 
-
+- Pertanyaan 1:Apa keuntungan utama Shamir Secret Sharing dibanding membagikan salinan kunci secara langsung?
+- Pertanyaan 2: Apa peran threshold (k) dalam keamanan secret sharing?
+- Pertanyaan 3: Berikan satu contoh skenario nyata di mana SSS sangat bermanfaat.
+Jawab:
+1. Keuntungan utama dari Shamir secret sharing dibandingkan  membandingkan salinan kunci secara langsung yaitu tidak adanya single point of failure, karena kunci tidak pernah disimpan ataupun dibagikan secara utuh kepada sebelah pihak. Setiap share secara individual tidak memberikan informasi (sangat menjaga rahasia), sehingga jika satu atau beberapa pihak bocor atau disusupi, kunci akan tetap aman selama jumlah share yang bocor belum mencapai ambang batas.
+2. Threshold(k) berperan sebagai batas minimum keamanan, yang mana jumlah shere yang harus digabungkan untuk merekontruksi rahasia. Nilai K menetukan keseimbangan antara keamanan da ketersediaan : semakin besar nilai K, semakin tinggi tingkat kamanannya karena lebih banyak pihak yang harus bekerja sama, namun jika terlalu besar dapat mengurangi keandalan sistem ketika beberapa share tidak tersedia.
+3. Salah satu 
 ---
 
 ## 8. Kesimpulan
