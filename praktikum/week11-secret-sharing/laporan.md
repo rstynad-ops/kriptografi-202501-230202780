@@ -3,10 +3,11 @@ Minggu ke-: 11 Topik: [judul praktikum]  Nama:Resty Chonifatul jannah  NIM: 2302
 
 ---
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Menjelaskan konsep Shamir Secret Sharing (SSS).
+2. Melakukan simulasi pembagian rahasia ke beberapa pihak menggunakan skema SSS.
+3. Menganalisis keamanan skema distribusi rahasia.
 
 ---
-
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
