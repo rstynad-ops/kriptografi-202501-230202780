@@ -1,12 +1,7 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 11 Topik: [judul praktikum]  Nama:Resty Chonifatul jannah  NIM: 230202780  Kelas: 5 Ikrb  
 
 ---
-
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 
