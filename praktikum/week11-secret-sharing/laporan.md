@@ -22,12 +22,13 @@ Shamir secret shering bekerja berdasarkan prinsip interpolasi polinominal pada b
 
 ---
 ## 4. Langkah Percobaan
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Membuat file `secret_shering.py` di folder `praktikum/week11-secret shering/src/`.
+2. Menyalin serta memodif kode program dari panduan praktikum.
+3. Menjalankan program dengan perintah `python secret_shering.py`.
+4. Membuat file` ` simulasi-manual.py pada folder praktikum/week11-secret-shering/src/.
+5. Membuat folder Screenshots di folder praktikum/week11-secret-shering/src/.
 
 ---
-
 ## 5. Source Code
 ```python
 # contoh potongan kode
@@ -59,9 +60,8 @@ Hasil eksekusi program Caesar Cipher:
 Jawab:
 1. Keuntungan utama dari Shamir secret sharing dibandingkan  membandingkan salinan kunci secara langsung yaitu tidak adanya single point of failure, karena kunci tidak pernah disimpan ataupun dibagikan secara utuh kepada sebelah pihak. Setiap share secara individual tidak memberikan informasi (sangat menjaga rahasia), sehingga jika satu atau beberapa pihak bocor atau disusupi, kunci akan tetap aman selama jumlah share yang bocor belum mencapai ambang batas.
 2. Threshold(k) berperan sebagai batas minimum keamanan, yang mana jumlah shere yang harus digabungkan untuk merekontruksi rahasia. Nilai K menetukan keseimbangan antara keamanan da ketersediaan : semakin besar nilai K, semakin tinggi tingkat kamanannya karena lebih banyak pihak yang harus bekerja sama, namun jika terlalu besar dapat mengurangi keandalan sistem ketika beberapa share tidak tersedia.
-3. Salah satu 
+3. Salah satu skenario dari penggunaan Shamir Secret Shering yaitu pada penyimpanan kunci dompet cryptocurerency (cold wallet), dimana kunnci privat dibagi ke beberapa pihak ataupun lokasi yang berbeda, serta hanya bisa digunakan ketika sejumlah pemegang share yang telah ditentukan bekerja sama, sehingga mengunrangi resiko pencurian, kehilangan,maupun penyalahgunaan kunci oleh satu pihak saja.
 ---
-
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
@@ -72,5 +72,5 @@ Jawab:
 Author: Resty Chonifatul Jannah <rstynad@gmail.com>
 Date:   2026-01-14
 
-    week11-secret-sharing: implementasi Caesar Cipher dan laporan )
+    week11-secret-sharing: Secret Shering (Shamir's Secret Shering )
 ```
