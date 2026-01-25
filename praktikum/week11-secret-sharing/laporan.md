@@ -30,12 +30,81 @@ Shamir secret shering bekerja berdasarkan prinsip interpolasi polinominal pada b
 
 ---
 ## 5. Source Code
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+Langkah 1 - Implementasi shamir secret sharing
+```import random
+
+# Prime besar (harus > secret)
+PRIME = 208351617316091241234326746312124448251235562226470491514186331217050270460481
+
+# -----------------------------
+# Fungsi matematika dasar
+# -----------------------------
+def mod_inverse(a, p):
+    return pow(a, -1, p)
+
+def eval_polynomial(coeffs, x, p):
+    result = 0
+    for power, coef in enumerate(coeffs):
+        result = (result + coef * pow(x, power, p)) % p
+    return result
+
+# -----------------------------
+# Membuat shares
+# -----------------------------
+def split_secret(secret, n, k):
+    """
+    secret : angka rahasia
+    n      : jumlah share
+    k      : threshold minimal untuk recovery
+    """
+    coeffs = [secret] + [random.randrange(1, PRIME) for _ in range(k - 1)]
+
+    shares = []
+    for x in range(1, n + 1):
+        y = eval_polynomial(coeffs, x, PRIME)
+        shares.append((x, y))
+    return shares
+
+# -----------------------------
+# Recover secret
+# -----------------------------
+def recover_secret(shares):
+    secret = 0
+    for j, (xj, yj) in enumerate(shares):
+        numerator = 1
+        denominator = 1
+        for m, (xm, _) in enumerate(shares):
+            if m != j:
+                numerator = (numerator * (-xm)) % PRIME
+                denominator = (denominator * (xj - xm)) % PRIME
+
+        lagrange = numerator * mod_inverse(denominator, PRIME)
+        secret = (PRIME + secret + (yj * lagrange)) % PRIME
+    return secret
+
+# -----------------------------
+# CONTOH PEMAKAIAN
+# -----------------------------
+if __name__ == "__main__":
+    secret = 123456789
+    n = 5   # jumlah share
+    k = 3   # minimal share untuk recover
+
+    print("Secret asli:", secret)
+
+    shares = split_secret(secret, n, k)
+
+    print("\nShares:")
+    for s in shares:
+        print(s)
+
+    print("\nAmbil 3 shares pertama untuk recover:")
+    recovered = recover_secret(shares[:k])
+    print("Secret hasil recovery:", recovered)
+
 ```
-)
+Langkah2_
+
 
 ---
 ## 6. Hasil dan Pembahasan
