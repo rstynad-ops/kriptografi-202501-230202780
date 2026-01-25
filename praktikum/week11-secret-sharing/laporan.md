@@ -230,7 +230,7 @@ Jawab:
 3. Salah satu skenario dari penggunaan Shamir Secret Shering yaitu pada penyimpanan kunci dompet cryptocurerency (cold wallet), dimana kunnci privat dibagi ke beberapa pihak ataupun lokasi yang berbeda, serta hanya bisa digunakan ketika sejumlah pemegang share yang telah ditentukan bekerja sama, sehingga mengunrangi resiko pencurian, kehilangan,maupun penyalahgunaan kunci oleh satu pihak saja.
 ---
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan hasil dari implementasi program yang telah dilakukan, dapat disimpulkan bahwa metode Shamir Secret Sharing mampu membagi sebuah rahasia menjadi beberapa bagian (shares) dengan mekanisme ambang batas, sehingga secret hanya dapat direkontruksi apabila jumlah share yang digunakan mencukupi. Kedua program berhasil menerapkan konsep polinomial modulo bilangan prima dan interpolasi lagrange secara konsisten,  serta mampu mengembbalikan secret tepat. Implementasi ini menunjukan bahwa teknik secret sharing efektif dalam meningkatkan keamanan data, mengurangi resiko kehilangan informasi, serta dapat diterapkan pada sistem penyimpanan maupun data rahasia.
 
 ---
 ## 10. Commit Log
