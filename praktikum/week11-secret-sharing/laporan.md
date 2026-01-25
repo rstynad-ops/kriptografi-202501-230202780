@@ -33,12 +33,23 @@ Shamir secret shering bekerja berdasarkan prinsip interpolasi polinominal pada b
 Langkah 1 - Implementasi shamir secret sharing
 ```import random
 
-# Prime besar (harus > secret)
-PRIME = 208351617316091241234326746312124448251235562226470491514186331217050270460481
+# ================================
+# Konversi string <-> integer
+# ================================
+def string_to_int(text):
+    return int.from_bytes(text.encode(), 'big')
 
-# -----------------------------
-# Fungsi matematika dasar
-# -----------------------------
+def int_to_string(number):
+    return number.to_bytes((number.bit_length() + 7) // 8, 'big').decode()
+
+# ================================
+# Bilangan prima besar
+# ================================
+PRIME = 2**521 - 1   # prime Mersenne (aman untuk text panjang)
+
+# ================================
+# Fungsi matematika
+# ================================
 def mod_inverse(a, p):
     return pow(a, -1, p)
 
@@ -48,64 +59,78 @@ def eval_polynomial(coeffs, x, p):
         result = (result + coef * pow(x, power, p)) % p
     return result
 
-# -----------------------------
-# Membuat shares
-# -----------------------------
-def split_secret(secret, n, k):
-    """
-    secret : angka rahasia
-    n      : jumlah share
-    k      : threshold minimal untuk recovery
-    """
-    coeffs = [secret] + [random.randrange(1, PRIME) for _ in range(k - 1)]
+# ================================
+# Split secret
+# ================================
+def split_secret(secret_text, k, n):
+    secret_int = string_to_int(secret_text)
+
+    if secret_int >= PRIME:
+        raise ValueError("Secret terlalu besar untuk prime!")
+
+    coeffs = [secret_int] + [random.randrange(1, PRIME) for _ in range(k - 1)]
 
     shares = []
     for x in range(1, n + 1):
         y = eval_polynomial(coeffs, x, PRIME)
         shares.append((x, y))
+
     return shares
 
-# -----------------------------
+# ================================
 # Recover secret
-# -----------------------------
+# ================================
 def recover_secret(shares):
     secret = 0
+
     for j, (xj, yj) in enumerate(shares):
         numerator = 1
         denominator = 1
+
         for m, (xm, _) in enumerate(shares):
             if m != j:
                 numerator = (numerator * (-xm)) % PRIME
                 denominator = (denominator * (xj - xm)) % PRIME
 
         lagrange = numerator * mod_inverse(denominator, PRIME)
-        secret = (PRIME + secret + (yj * lagrange)) % PRIME
-    return secret
+        secret = (secret + yj * lagrange) % PRIME
 
-# -----------------------------
-# CONTOH PEMAKAIAN
-# -----------------------------
+    return int_to_string(secret)
+
+# ================================
+# MAIN PROGRAM
+# ================================
 if __name__ == "__main__":
-    secret = 123456789
-    n = 5   # jumlah share
-    k = 3   # minimal share untuk recover
 
-    print("Secret asli:", secret)
+    # Rahasia
+    secret = "KriptografiUPB2025"
 
-    shares = split_secret(secret, n, k)
+    # threshold dan jumlah share
+    k = 3
+    n = 5
 
-    print("\nShares:")
+    # Split
+    shares = split_secret(secret, k, n)
+    print("Shares:")
     for s in shares:
         print(s)
 
-    print("\nAmbil 3 shares pertama untuk recover:")
+    # Recover dari 3 share pertama
     recovered = recover_secret(shares[:k])
-    print("Secret hasil recovery:", recovered)
-
+    print("\nRecovered secret:", recovered)
 ```
 Hasilnya :
 ```
-Langkah2_Simulasi Manual (Tanpa Library)
+Shares:
+(1, 5938840902010934437079642070197563142370343085035538676431259023555433408502154596946454985755811523358595663950239968895105759390804902370333743074734052217)
+(2, 728172919167650271862128911371161033761503851495249948379161674152775521359716343568949416606515481940174517269569874489259769228087801391538636994994503066)
+(3, 4962389031861976649293162920764973325981788199809050044027098329348655888765653396235162214536475540676625494132438863247615542907909323658651916158970949781)
+(4, 4911893919832694139408942500216213584492325529690328144586142070771988143924653650699974098222782589613355971755885219095929104430836181546525523984433278060)
+(5, 576687583079802742209467649724881809293115841139084250056292898422772286836717106963385067665436628750365950139908942034200453796868375055159460471381487903)
+
+Recovered secret: KriptografiUPB2025
+```
+Langkah 2 - Simulasi Manual (Tanpa Library)
 ```import random
 
 # 1. Pilih bilangan prima p
@@ -171,10 +196,19 @@ print("\nShare yang dipakai:", selected)
 
 recovered = recover_secret(selected)
 print("Secret hasil rekonstruksi:", recovered)
-
 ```
+Hasilnya:
+```
+Shares:
+(1, 1395)
+(2, 696)
+(3, 115)
+(4, 1741)
+(5, 1396)
 
-
+Share yang dipakai: [(1, 1395), (2, 696), (3, 115)]
+Secret hasil rekonstruksi: 123
+```
 ---
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
