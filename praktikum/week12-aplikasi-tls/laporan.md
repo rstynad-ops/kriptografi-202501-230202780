@@ -1,17 +1,13 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 12 Topik: Aplikasi TLS & E_commers  Nama: Resty chonifatul Jannah  NIM: 230202780 Kelas: 5ikrb  
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Menganalisis penggunaan kriptografi pada email dan SSL/TLS.
+2. Menjelaskan enkripsi dalam transaksi e-commerce.
+3. Mengevaluasi isu etika & privasi dalam penggunaan kriptografi di kehidupan sehari-hari.
 
 ---
-
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
@@ -63,13 +59,17 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
+## 7. Jawaban Pertanyaan  
+- Pertanyaan 1:apakah perbedana utama antara HTTP dan HTTPS?  
+- Pertanyaan 2: Mengapa sertifikat digital menjadi penting dalam komunikasi TLS? 
+- Pertanyaan 3:Bagaimana Kriptografi mendukung privasi dalam komunikasi digital, tetapi sekaligus menimbulka tentang hukuman dan etika?
 
+Jawab:
+1. HTTP (HyperText Transfer Protocol) mengirimkan data dalam bentuk teks biasa sehingga mudah disadap atau dimodifikasi oleh pihak lain. Sementara itu, HTTPS (HyperText Transfer Protocol Secure) menggunakan protokol keamanan TLS/SSL untuk mengenkripsi data yang dikirim, sehingga informasi seperti password, data pribadi, dan transaksi menjadi lebih aman. HTTPS juga menjamin keaslian server dan integritas data selama proses komunikasi.
+2. Sertifikat digital berfungsi untuk memverifikasi identitas suatu server atau pihak yang berkomunikasi agar pengguna yakin bahwa mereka terhubung ke pihak yang benar, bukan ke penyerang. Sertifikat ini dikeluarkan oleh lembaga terpercaya yang disebut Certificate Authority (CA). Selain itu, sertifikat digital juga digunakan untuk mendistribusikan kunci publik secara aman sehingga proses enkripsi dan pertukaran data dalam TLS dapat berlangsung dengan aman dan terpercaya.
+3. Kriptografi melindungi privasi dengan mengenkripsi data sehingga hanya pihak yang berwenang yang dapat membaca informasi tersebut, misalnya pada komunikasi pesan, transaksi online, dan penyimpanan data. Namun, penggunaan kriptografi juga menimbulkan tantangan hukum dan etika karena dapat dimanfaatkan untuk menyembunyikan aktivitas ilegal, menyulitkan penegakan hukum dalam proses penyelidikan. Oleh karena itu, diperlukan keseimbangan antara perlindungan privasi individu dan kepentingan keamanan publik.
+   
+---
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
