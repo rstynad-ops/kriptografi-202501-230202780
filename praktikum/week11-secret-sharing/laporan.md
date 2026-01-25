@@ -211,20 +211,15 @@ Secret hasil rekonstruksi: 123
 ```
 ---
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Hasil eksekusi daari program secret_sharing.py:
+<img width="1913" height="1020" alt="image" src="https://github.com/user-attachments/assets/b8aaef7f-cd37-49e3-8a11-15c0582c1c40" />
+Pembahasan : Pada implementasi ini, secret dibentuk sebagai konstanta polinomial dan di kombinasikan dengan koefisien acak dalam operasi modulo bilangan prima. Setiap share merupakan pasangan nilai (x,f(x)) yang tidak mengungkapkan informasi rahasia secara langsung. Rekonstruksi secret dilakukan menggunakan interpolasi lagrange dengan minimal jumlah share sesuai threshold, sehingga nilai konstanta polinomial dapat dikembalikan secara tepat. Hasil pengujian menunjukan bahwa secret berhasil terkontruksi dengan benar ketike jumlah share mencukupi, dan tidak dapat diperoleh jika share kurang dari threshold.
 
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+Hasil eksekusi dari program shamir_manual.py:
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/1a18595a-a53e-4ccd-9ab9-21ae0ce027b9" /> 
+Pembahasan : Pada program ini mengimplementasikan algoritma shamir secret sharing secara manual mengunakan polinomial modulo bilangan prima. Secret dijadikan sebagai konstanta polinomial, sedangkan koefisien lainnya dipilih secara acak untuk menjaga kerahassiaan data. Program menghasilakan beberapa share dalam bentuk pasangan (x,f(x)), dimana setiap share tidak dapat mengungkapkan secret secara mandiri. Proses rekontruksi dilakukan menggunakan metode intrpolasi lagrange dangan jumlah share minimal sesuai nilai threshold. Dimana hasil pengujian menunjukan bahwa secret dapat dikembalikan secara tepat ketika jumlah share mencukupi, sehingga membuktikan bahwa algoritma berjalan sesuai konsep matematis yang digunakan.
 
 ---
-
 ## 7. Jawaban Pertanyaan
 - Pertanyaan 1:Apa keuntungan utama Shamir Secret Sharing dibanding membagikan salinan kunci secara langsung?
 - Pertanyaan 2: Apa peran threshold (k) dalam keamanan secret sharing?
