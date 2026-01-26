@@ -31,6 +31,7 @@ Dalam analisis kriptografi, penting untuk membedakan kelemahan algoritma dan kel
 4. Mengimplementasikan fungsi dictionary attack untuk mencocokkan hash MD5 hasil kebocoran dengan daftar password pada file dictionary.txt.Menyalin kode program dari panduan praktikum.
 5. Mencatat hasil keluaran (output) ketika password berhasil ditemukan melalui proses dictionary attack.
 4. Menjalankan program dengan perintah `python dictionary_atteck_damo..py`.
+5. Membuat folder Screenshots
 
 ---
 ## 5. Source Code
