@@ -21,11 +21,12 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
   
 ---
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Langkah 1 — Analisis SSL/TLS pada Email & Web
+   - Issuer CA (Certificate Authority),Sertifikat digital website shoppe diterbitkan oleh GlobalSign GCC AlphaSSL CA 2023 dengan organisasi GlobalSign nv-sa. GlobalSign merupakan lembaga otiritas sertifikat internasional yang terpercaya.
+   -Sertifikat Shoppe ini mulai berlaku pada 24 maret 2025 dan akan berarhit pada 25 april 2026 .
+   - Sertifikat menggunakan fingerprint SHA-256 untuk menjaga keaslian data. Dalam komunikasi HTTPS,menggunakan algoritma RSA untuk pertukaran kunci dan AES untuk mengenkripsi data, sehingga informasi pengguna terlindungi dari penyadapan.
+   - Website menggunakan protokol HTTPS yang ditandai dengan ikon gembok pada browser, menandakan bahwa seluruh data yang dikirim dan diterima telah terenkripsi. hal ini membiat komunikasi lebih   aman, menjaga kerahasian data, serta meniningkatkan kepercayaan pengguna. Sebaliknya, website yang tidak menggunakan HTTPS (HTTP) tidak memiliki sertifikat digital dan tidak menerapkan enkripsi, sehingga data mudah disadap, dimanipulasi, serta beresiko terhadap serangan keaman seperti pencurian data atau penyisipan malawe
+4. Menjalankan program dengan perintah `python caesar_cipher.py`.)
 
 ---
 ## 5. Source Code
