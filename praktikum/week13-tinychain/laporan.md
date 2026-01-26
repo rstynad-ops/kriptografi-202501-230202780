@@ -1,40 +1,33 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 13 Topik: Tinychain-Proof of work (PoW)  Nama: Resty Chonifatul Jannah NIM: 230202780 Kelas: 5 ikrb 
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1. Menjelaskan peran hash function dalam blockchain.
+2. Melakukan simulasi sederhana Proof of Work (PoW).
+3. Menganalisis keamanan cryptocurrency berbasis kriptografi.
+   
 ---
-
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 ---
-
 ## 3. Alat dan Bahan
-(- Python 3.x  
+- Python 3.11 
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
 - Library tambahan (misalnya pycryptodome, jika diperlukan)  )
 
 ---
-
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file tinychain.py di folder praktikum/week13-tinychain/src/.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah python tinychain.py.
+4. Mengerjakan laporan.md
+5. Membuat file hasil.png di folder praktikum/week13-tinychain/sreenshoots/
 
 ---
-
 ## 5. Source Code
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
