@@ -1,17 +1,13 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 15 Topik: [judul praktikum]  Nama: Resty Chonifatul Jannah NIM: 230202780 Kelas: 5 Ikrb
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Mengembangkan proyek sederhana berbasis algoritma kriptografi.
+2. Mendokumentasikan proses implementasi proyek ke dalam repository Git.
+3. Menyusun laporan teknis hasil proyek akhir.
 
 ---
-
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
