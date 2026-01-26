@@ -134,32 +134,24 @@ Namun pada awal pembuatan program, sempat terjadi error yang menyebabkan kode ti
 
 ---
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+- Pertanyaan 1: Mengapa fungsi hash sangat penting dalam blockchain?
+- Pertanyaan 2: Bagaimana Proof of Work mencegah double spending?
+- Pertanyaan 3: Apa kelemahan dari PoW dalam hal efisiensi energi?
+Jawab :
+1. Karene berfungsi untuk menjaga integritas dan keamanan data. Setiap blok memiliki hash unik yang dihasilkan dari isis blok tersebut. Jika data dalam blok diubah sedikit saja, maka nilai hash akan berubah secara signifikan, sehingga manipulasi dapat terdeteksi dengan menudah. Selain itu, hash juga menghubungkan satu blok dengan blok sebelumnya melalui previous hash, sehingga membentuk rantai yang aman dan sulit dipalsukan.
+2. memastikan bahwa setiap transaksi harus diverifikasi dan dimasukan ke dalam blok yang telah melalui proses mining. proses mining membutuhkan waktu dan daya konputasi yang besar, sehingga tidak memungkinkan satu pihak memalsukan transaksi secara cepat untuk membelanjakan aset sama dua kali. Setelah transaksi tercatat di blockchain serta dikonfirmasi oleh jaringan, data tersebut sulit siubah karena memerlukan pengulangan proses mining pada seluruh bloh berikutnya.
+3. Kelemahan utama Proof of work yaitu tingginya konsumsi energi karena proses mining memerlukan perhitungan hash secara terus-menerus oleh banyak komputer. Semakin tinggi tingkat kesulitan jaringan , semakin besar pula daya listrik dan perangkat keras yang dibutuhkan. Hal ini menyebabkan biaya operasional yang tinggi serta berdampak pada tingkat lingkungan, sehingga PoW dinilai kurang efisien dibandingkan metode konsensus lain yang lebih hemat energi.
+   
 ---
-
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan, fungsi hash dan mekanisme Proof of Work terbukti mampu menjaga integritas data dan keamanan blockchain melalui proses mining yang membutuhkan perhitungan komputasi. Semakin tinggi tingkat *difficulty*, semakin lama waktu yang diperlukan untuk menemukan hash yang valid. Hal ini menunjukkan bahwa blockchain sulit dimanipulasi karena setiap perubahan data memerlukan usaha komputasi yang besar.
 
 ---
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit week13-tinychain
+Author: Resty Chonifatul Jannah <rstynad.gmail.com>
+Date:   2026-01-26
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+   week13-tinychain: TinyChain – Proof of Work (PoW)
 ```
