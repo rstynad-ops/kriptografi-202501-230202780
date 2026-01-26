@@ -30,33 +30,109 @@ Sementara itu, Proof of Work (PoW) merupakan mekanisme konsensus dalam teknologi
 
 ---
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+Langkah 1 & 2 - membuat block chain
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+```import hashlib
+import time
+
+# =========================
+# Class Block
+# =========================
+class Block:
+    def __init__(self, index, previous_hash, data, timestamp=None):
+        self.index = index
+        self.timestamp = timestamp or time.time()
+        self.data = data
+        self.previous_hash = previous_hash
+        self.nonce = 0
+        self.hash = self.calculate_hash()
+
+    def calculate_hash(self):
+        value = (
+            str(self.index)
+            + str(self.timestamp)
+            + str(self.data)
+            + str(self.previous_hash)
+            + str(self.nonce)
+        )
+        return hashlib.sha256(value.encode()).hexdigest()
+
+    def mine_block(self, difficulty):
+        while self.hash[:difficulty] != "0" * difficulty:
+            self.nonce += 1
+            self.hash = self.calculate_hash()
+        print(f"✅ Block mined: {self.hash}")
+
+
+# =========================
+# Class Blockchain
+# =========================
+class Blockchain:
+    def __init__(self):
+        self.chain = [self.create_genesis_block()]
+        self.difficulty = 4
+
+    def create_genesis_block(self):
+        return Block(0, "0", "Genesis Block")
+
+    def get_latest_block(self):
+        return self.chain[-1]
+
+    def add_block(self, new_block):
+        new_block.previous_hash = self.get_latest_block().hash
+        new_block.mine_block(self.difficulty)
+        self.chain.append(new_block)
+
+
+# =========================
+# Uji coba blockchain
+# =========================
+my_chain = Blockchain()
+
+print("⛏️ Mining block 1...")
+my_chain.add_block(Block(1, "", "Transaksi A → B: 10 Coin"))
+
+print("⛏️ Mining block 2...")
+my_chain.add_block(Block(2, "", "Transaksi B → C: 5 Coin"))
+
+print("\n📦 Isi Blockchain:")
+for block in my_chain.chain:
+    print("----------------------------")
+    print("Index :", block.index)
+    print("Data  :", block.data)
+    print("Hash  :", block.hash)
+    print("Prev  :", block.previous_hash)
+
 ```
-)
+Hasilnya :
+```
+⛏️ Mining block 1...
+✅ Block mined: 00003645d5e4f98e99de9010a4ba19a80c302141361a53a3a136d7b811a37b6b
+⛏️ Mining block 2...
+✅ Block mined: 0000afa62e9bbc98ce1dc959572485fedbab41206d1d7762012b929f5f63d97d
+
+📦 Isi Blockchain:
+----------------------------
+Index : 0
+Data  : Genesis Block
+Hash  : a1995739a07a48a5a38d4677b460ce4f2b48ab9fe40954b268222f84ccc1a3d1
+Prev  : 0
+2012b929f5f63d97d
+Prev  : 00003645d5e4f98e99de9010a4ba19a80c302141361a53a3a136d7b811a37b6b
+```
+Langkah 3 - Analisis Proof of Work (PoW)
+pada program ini, proses PoW dilakukan melalui fungsi mine_block(), dimana sistem mencari nilai hash yang emmenuhi syarat tingkat kesulitan (difficulty), yaitu diawali dengan sejumlah angka nol, proses ini dilakukan dengan cara mengubah nilai nonce secara terus menerus serta menghitung ulang hash menggunakan algoritma SHA-256 hingga ditemukan hast yang sesuai. Setiap percobaan menghasilkan nilai hash yang berbeda, sehingga diperlukan banyak iterasi sebelum memperoleh hasil yang valis. Semakin besar nilai difficlty, semakin banyak kombinasi nonce yang has=rus dicoba, sehingga waktu komputasi menjadi lebih lama. proses ini menunjukan bahwa penbuatan satu blok membutuhkan usaha nyata (work) dari komputer.
 
 ---
-
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Hasil eksekusi program tinychain:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd35a057-9c72-42ec-b7d3-a276df7374dd" />
 
-Hasil eksekusi program Caesar Cipher:
+Berdasarkan hasil eksekusi program yang telah dilakukan, terlihat bahwa proses mining telah berhasi menghasilkan hash yang diawali dengan empat angka nol, sesuai dengan nilai difficulty yang diterapkan. proses ini membutuhkan percobaan berulangkali dengan menaikan nilai nonce hingga diperoleh hash yang memenuhi kriteria tersebut. Waktu yang dibutuhkan untuk menemukan hash yang valid bergantung pada tingkat difficulty yang digunakan.
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+Namun pada awal pembuatan program, sempat terjadi error yang menyebabkan kode tidak bisa dijalankan. Error terjadi karena kesalahan penulisan kode deklarasi untuk kelas Blockchain yang berada pada baris yang sama dengan perintah print(). Setelah error berhasil diatasi, program dapat berjalan kembali tanpa kendala.
 
 ---
-
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
 - Pertanyaan 1: …  
