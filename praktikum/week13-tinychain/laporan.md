@@ -9,8 +9,9 @@ Minggu ke-: 13 Topik: Tinychain-Proof of work (PoW)  Nama: Resty Chonifatul Jann
    
 ---
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Hasd funcation adalah fungsi kriptogarfi yang mengubah data dengan panjang berapa pun menjadi nilai hash yang berdimensi tetap dan bersifat satu arah, sehingga hasil hash tidak dapat dikembalikan ke dalam bentuk data aslinya. Hash memilki sifat derterministrik, dimana input yang sama akan menghasilkan otput yang sama, dan akan sangat sensitif terhadap perubahan kecil pda input sehingga mampu mendeteksi perubahan data. Oleh karena itu, hash funcation banyak digunakan untuuk menjaga integritas data, autentikasi, ttanda tanga  digital, penyimpanan password, dan berbagai keamanan informasi lainya.
+
+Sementara itu, Proof of Work (PoW) merupakan mekanisme konsensus dalam teknologi blockhain yang mengharuskan komputer untuk melakukan proses perhitungan hash secara berulang untuk menemukan nilai tertentu yang memenuhi tingkat kesulitan jaringan sebagai bukti krtja.Proses ini membutuhkan daya komputasi dan juga energi yang besar, sehingga mempersulit pihak tidak bertanggung jawab untuk melakuakan pemalsuan transaksi atau mengubah data. Dengan kombinasi hash funcation dan PoW, sistem digital dapat menjamin keamanan, keabshan transaksi, serta kepercayaan antar pengguna dalam lingkungan terdistribusi.
 
 ---
 ## 3. Alat dan Bahan
