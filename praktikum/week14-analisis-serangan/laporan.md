@@ -1,17 +1,13 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 14 Topik: Analisis Serangan Kriptografi Nama:Resty Chonifatul Jannah  NIM: 230202780 Kelas: 5 Ikrb 
 
 ---
-
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Mengidentifikasi jenis serangan pada sistem informasi nyata.
+2. Mengevaluasi kelemahan algoritma kriptografi yang digunakan.
+3. Memberikan rekomendasi algoritma kriptografi yang sesuai untuk perbaikan keamanan.
 
 ---
-
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
@@ -19,22 +15,19 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
+- Python 3.11 
 - Visual Studio Code / editor lain  
-- Git dan akun GitHub  
+- Git dan akun GitHub
+- Google Chrome
 - Library tambahan (misalnya pycryptodome, jika diperlukan)  )
 
 ---
-
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
 1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
 
 ---
-
 ## 5. Source Code
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
@@ -75,21 +68,11 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
+## 10. Commit Log:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit week14
+Author: Resty Chonifatu Jannah <rstynad@gmail.com>
+Date:   2026-01-26
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week14-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
